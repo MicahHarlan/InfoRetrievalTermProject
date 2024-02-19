@@ -1,0 +1,52 @@
+\documentclass[journal]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{authblk}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage{url}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+% paper title
+\title{Badass Title}
+
+% author names and affiliations
+\author[1]{Micah Keith Harlan}
+\author[1]{Jianger Yu}
+\author[1]{Baiyi Zhang}
+
+% For affiliations, directly adjust the font size using \small, \footnotesize, etc.
+\affil[1]{{\small \{mharlan25, jianger, baiyi\}@vt.edu}}
+\affil[1]{{\small Department of Computer Science, Virginia Polytechnic Institute and State University, Falls Church, VA, USA}}
+
+% make the title area
+\maketitle
+
+% abstract
+\begin{abstract}
+These instructions give you guidelines for preparing papers for IEEE Transactions and Journals. 
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+IEEE, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed by the rest of the first word in caps.
+\IEEEPARstart{T}{his} is a test\cite{manning2008introduction}.
+
+\section{Conclusion}
+The conclusion goes here.
+
+% references section
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv, proposal-ref}
+
+\end{document}
