@@ -35,7 +35,7 @@ The rise of streaming services has revolutionized the way we consume media, offe
 
 % Note that keywords are not normally used for peer-reviewed papers.
 \begin{IEEEkeywords}
-IEEE, journal, \LaTeX, paper, template.
+Information Retrieval, Movie Recommendation, Large Language Model, Content-Based Filtering
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -47,7 +47,7 @@ Users have been faced with an overabundance of movies and or content to choose f
 This project aims to build an innovative movie information retrieval (IR) and recommendation system. The methods to respond to users’ queries are: (1) searching specific information. For example, the title and cast of the movie; (2) providing generic movie recommendations using machine learning. The main tasks of the project includes retrieving data from both indexed databases and the Internet, providing Top-N movie recommendations for the search using ranking algorithms, and displaying the search results in a User Interface (UI). To ensure both usability and performance, the project will also involve pre-training the machine learning model for recommendation and utilizing large language models for enhancing query rewriting and summarizing search results, in addition to the primary tasks. 
 
 \section{Related Works}
-In this section, studies relating to Traditional Information Retrieval (IR) systems, systems based on machine learning, and the usage of LLMs are introduced for searching and making content recommendations.
+In this section, studies relating to Traditional Information Retrieval systems, systems based on machine learning, and the usage of LLMs are introduced for searching and making content recommendations.
 
 \subsection{Traditional IR System}
 Modern Information Retrieval\cite{RN15} includes the algorithms and mathematical tools to determine query-document relevance, the best practice for indexing and ranking the search results. Introduction to Information Retrieval\cite{manning2008introduction} introduces the machine learning models and algorithms from the natural language processing (NLP) perspective. Priya et al\cite{6508326} proposed an ontology-based semantic query suggestion for movie search. This work can be leveraged in suggesting alternatives to a user’s initial query. They translated the keyword-based query to an ontology-based and structured query. Haughton et al\cite{RN16} introduced the method to interact with IMDb’s basic database and to retrieve user reviews. 
@@ -63,14 +63,14 @@ Roy et al\cite{RN17} provided a systematic review of the current start of recomm
 \subsection{Application of LLM}
 Zhu et al\cite{LLM4IRSurvey} delved into the confluence of IR systems and LLMs, they suggested the improvements LLMs bring to the traditional IR systems’ four core functions. LLMs can change traditional query rewriting which primarily relies on statistical analysis of term frequencies with its better semantic understanding features. Shen et al\cite{RN11} proposed a method, Language language model as Retriever (LameR), that applies LLM to large-scale retrieval in zero-shot scenarios. Issa et al\cite{10295108} studied embedding models supported by KeyBERT, a tool to extract keywords from a text.
 
-\subsection{User Interface}
+\subsection{Results Organizing}
 Butler et al\cite{7494103} developed an Interface for querying and data mining for the IMDb dataset, which uses different entries for name and title searches. IMDb\cite{IMDb} exposed GraphQL API for developer use, which contains movie posters plots, etc. This is the information that is going to be displayed in support of the movie entries.
 
 \section{Proposed Approaches}
 \subsection{Components}
 The following is the necessary aspects of our proposed system to be implemented successfully.
 \begin{enumerate}
-    \item {Data and Storage}: The dataset used in the project is expected to include meta information about a movie, such as title, cast, and plot. The metadata information will support the data retrieval function using query-document relevance algorithms. A local relational database is required to store the movie entries as most data inquiries will be processed using SQL operations. 
+    \item {Data and Storage}: The dataset used in the project is expected to include meta information about a movie, such as title, cast, and plot. The metadata information will support the data retrieval function using query-document relevance algorithms. A local relational database is required to store the movie entries as most data inquiries will be processed using SQL operations. PostgreSQL and MySQL database will be utilized in the developing and deployment of the project. 
 
     \item {Large Language Model}: The proposed Large language model for use in this project is going to be Meta’s LLama 2 local model. However, this is subject to change in the future depending on the capabilities of this LLM. The LLM will take in a user’s query and provide an answer by creating a query that returns accurate results. For instance, a user might input a scene from a movie, or a type of movie they want that is beyond the genre, the LLM will take this information and turn it into a search query.
 
@@ -96,9 +96,9 @@ Figure \ref{fig:sysarch} shows the proposed system architecture.
 \end{figure}
 
 \begin{enumerate}
-    \item  {User Interface (UI)}: The user interface consists of a search box for the user to type queries and an area to display search results (response). Most of the major front-end web development frameworks can provide the components we need. It is proposed that we use HTML + CSS + JavaScript as the project’s UI solution. Additional libraries and dependencies may be introduced in the engineering process.
+    \item  {User Interface}: The user interface consists of a search box for the user to type queries and an area to display search results (response). Most of the major front-end web development frameworks can provide the components we need. It is proposed that we use HTML + CSS + JavaScript as the project’s UI solution. Additional libraries and dependencies may be introduced in the engineering process.
 
-    \item {Query Processor}: The query processor processes user input. There are three main tasks for the query processor. First, it uses LLM for keyword extraction if necessary. When the user puts their question in a sentence, we need the help of LLM and tools like KeyBERT to extract the keyword from the query. Spelling correction and query expansion will be taken into consideration. Then it constructs SQL queries to search for keywords in the database for local data retrieval.
+    \item {Query Processor}: The query processor processes user input. There are three main tasks for the query processor. First, it uses LLM for keyword extraction if necessary. When the user puts their question in a sentence, we need the help of LLM to extract the keyword from the query. Spelling correction and query expansion will be taken into consideration. Then it constructs SQL queries to search for keywords in the database for local data retrieval.
 
     \item {Crawler and API Caller}: The crawler and API caller will search for specific information for a movie entry, such as posters, and audience reviews. Wikipedia, for example, contains information about the plot and reception of the movie. Additionally, the crawler also runs regularly to update or insert entries to the database.
 
