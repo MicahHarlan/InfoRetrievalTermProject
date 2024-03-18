@@ -163,3 +163,5 @@ cython_debug/
 .idea/
 movie.sql
 movie.db
+llm/resources/abc.txt
+llm/resources/abc.txt
