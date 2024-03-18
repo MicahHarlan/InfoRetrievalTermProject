@@ -1,0 +1,2 @@
+run this command to get an SQL File version of this.
+sqlite3 movie.db .dump > movie.sql
