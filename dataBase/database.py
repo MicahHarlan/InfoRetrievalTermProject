@@ -2,6 +2,15 @@ import sqlite3
 import pandas as pd
 import numpy as np
 import time
+import os
+
+database_path = 'movie.db'
+# Use os.remove() to delete the file
+try:
+    os.remove(database_path)
+    print(f"Database {database_path} deleted successfully.")
+except OSError as e:
+    print(f"Error: {e.strerror}")
 
 df = pd.read_csv('title.basics2.tsv',delimiter='\t',encoding='utf-8'
 ,low_memory=False)
@@ -42,6 +51,7 @@ actors.rename(columns={'nconst':'ActorID','primaryName':'Name'}
 actor_movie = df3[['knownForTitles','nconst']].copy()
 actor_movie.rename(columns={'nconst':'ActorID','knownForTitles':'MovieID'},inplace=True)
 
+
 """
 ==============================
 CREATING THE DATA BASE TABLES.
@@ -50,7 +60,8 @@ CREATING THE DATA BASE TABLES.
 'This file initializes the Movie Database.'
 conn = sqlite3.connect('movie.db')
 cursor = conn.cursor()
-tables = ['genres','Movie','MovieGenres','Actors','Directors']
+tables = ['genres','Movie','MovieGenres',
+'Actors','Directors','MovieDirectors','MovieActors']
 
 for t in tables:
 	query = f'DROP TABLE IF EXISTS {t}'
@@ -84,18 +95,19 @@ CREATE TABLE IF NOT EXISTS Movie (
     originalTitle VARCHAR(50),
     runtimeMinutes INT,
     avgRating INT,
+	numVotes INT,	
     PRIMARY KEY (MovieID)
 );
 """
 cursor.execute(create_table)
 for index, row in movies.iterrows():
     cursor.execute("""
-        INSERT INTO Movie (MovieID, primaryTitle, Year,originalTitle, runtimeMinutes, avgRating)
-        VALUES (?, ?, ?, ?, ?, ?);""", 
+        INSERT INTO Movie (MovieID, primaryTitle, Year,originalTitle, runtimeMinutes, avgRating,numVotes)
+        VALUES (?,?, ?, ?, ?, ?, ?);""", 
         (row['tconst'], 
 row['primaryTitle'], 
  row['startYear'],row['originalTitle'], 
-row['runtimeMinutes'], row['averageRating']))
+row['runtimeMinutes'], row['averageRating'],row['numVotes']))
 
 cursor.execute("SELECT primaryTitle FROM Movie WHERE Year=='1994';")
 #row = cursor.fetchone()
