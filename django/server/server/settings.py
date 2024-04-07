@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "movieRetrievalSystem.apps.MovieRetrievalSystemConfig"
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,8 @@ WSGI_APPLICATION = 'server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'movie.db',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
