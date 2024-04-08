@@ -8,7 +8,6 @@ class GenreBase(BaseModel):
 
 class Genre(GenreBase):
     genreName: str
-    movies_ids: List[str] = []
     class Config:
         orm_mode = True
 
@@ -20,7 +19,6 @@ class ActorBase(BaseModel):
 class Actor(ActorBase):
     ActorID: str
     Name: str
-    movies_ids: List[str] = []
     class Config:
         orm_mode = True
 
@@ -32,7 +30,6 @@ class DirectorBase(BaseModel):
 class Director(DirectorBase):
     DirectorID: str
     Name: str
-    movies_ids: List[str] = []
     class Config:
         orm_mode = True
 
@@ -43,8 +40,8 @@ class MovieBase(BaseModel):
     runtimeMinutes: int
     avgRating: float
     numVotes: int
-    plot: str
-    image: str
+    plot: str | None
+    image: str | None
     genres: List[Genre] = []
     actors: List[Actor] = []
     directors: List[Director] = []
