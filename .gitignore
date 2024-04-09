@@ -163,3 +163,4 @@ cython_debug/
 .idea/
 movie.sql
 movie.db
+config/
