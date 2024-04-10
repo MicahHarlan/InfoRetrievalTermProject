@@ -1,0 +1,123 @@
+header {
+  background: var(--secondary-background-color);
+  display: flex;
+  padding: 1em;
+  gap: 0.5em;
+  border-bottom: solid thin;
+  
+  border-bottom-color:var(--primary-color-dark);
+}
+
+.text-logo {
+  font-family: var(--title-font-family);
+  margin-top: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+input::placeholder{
+  color:var(--default-text-color);
+  text-align: center;
+}
+
+
+.search-button {
+  padding: 0.5em;
+  background-color: var(--neutral-color);
+  color: var(--default-text-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  margin-right: 0;
+  float: left;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+.search-bar {
+  padding: 0.5em;
+  background-color: var(--search-color);
+  border-radius: 5px;
+  border: none;
+  width: 29em;
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius:0;
+  margin-left: 0;
+  border-width: thin;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-width: thin;
+}
+
+
+.search-button {
+  padding: 0.5em;
+  background-color: var(--search-color);
+  color: var(--default-text-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none ;
+  margin: 0;
+  padding: 1em;
+  
+}
+
+.search-bar-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0em;
+  padding: 0em;
+  border: thin solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.search-bar-div:focus-within {
+  border: solid;
+  border-color: var(--primary-color-dark);
+  border-width: thin;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .search-button {
+      display: none;
+  }
+  .search-bar{
+
+      border-radius: 5px;
+  }
+  search-bar-div{
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+}

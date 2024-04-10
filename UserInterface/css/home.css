@@ -1,0 +1,46 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-text {
+  width: 20em;
+}
+
+.category-image-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.category-image-items a {
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-image-items div {
+  padding: 0.5em 0;
+  background: rgba(0, 0, 0, 0.5); /* last # is percent opacity */
+  color: white;
+  transform: translateY(-2.25em);
+  margin-bottom: -2em;
+}
+
+.book-image-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.book-image-items a {
+  text-align: center;
+  cursor: pointer;
+}
+
+.book-image-items div {
+  padding: 0.5em 0;
+  transform: translateY(-2.25em);
+  margin-bottom: -2em;
+}

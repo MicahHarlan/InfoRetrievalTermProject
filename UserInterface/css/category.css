@@ -1,0 +1,76 @@
+.category-buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--neutral-color);
+  margin: 1em;
+}
+
+.button.selected-category-button {
+  background-color: var(--neutral-color);
+  border-right: solid;
+  color: var(--primary-color);
+  
+}
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+  background-color: var(--neutral-color);
+  border-right: solid;
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+  background-color: var(--neutral-color)
+}
+
+.category-nav{
+  display: flex;
+  justify-content: center;
+  background-color: var(--neutral-color); 
+}
+
+.add-to-cart{
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.button.add-to-cart:hover{
+  color: whitesmoke;
+  background-color: var(--primary-color-dark);
+}
+
+.category-page-title{
+  margin-top: 1em;
+  font-size: 2em
+  5em;
+}
+
+.chatBot{
+  font-style: Bold;
+  color: black
+}
+
+.message-container{
+  max-height: 22em;
+  overflow-y: scroll;
+  margin: 0 auto;
+  
+}
+
+
+.typewriter p {
+  font-family: var(--default-font-family);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Centralizes the paragraph */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-family: monospace; /* Gives typewriter-like font styling */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+

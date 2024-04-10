@@ -1,0 +1,31 @@
+footer {
+  background: var(--secondary-background-color);
+  display: flex;
+  gap: 6.25em;
+  border-top: solid 1px;
+  border-top-color:var(--primary-color-dark);
+}
+
+.links,
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons {
+  text-align: center;
+  gap: 0.25em;
+}
+.find-about-contact{
+  
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.copyright {
+  
+  font-size: 0.2em;
+  text-align: center;
+}

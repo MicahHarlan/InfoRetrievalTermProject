@@ -1,0 +1,183 @@
+.category-buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--neutral-color);
+  margin: 1em;
+}
+
+
+.button.selected-category-button {
+  background-color: var(--neutral-color);
+  border-right: solid;
+  color: var(--primary-color);
+
+}
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+  background-color: var(--neutral-color);
+  border-right: solid;
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+
+  background-color: var(--neutral-color)
+}
+.category-nav{
+  display: flex;
+  justify-content: center;
+  background-color: var(--neutral-color);
+
+}
+
+.add-to-cart{
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+
+.button.add-to-cart:hover{
+  color: whitesmoke;
+  background-color: var(--primary-color-dark);
+}
+
+.category-page-title{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+
+.category-title-margin {
+    width: 100%;
+    text-align: center; /* Center the text within the title block */
+}
+
+.movie-parents{
+  display: flex;
+  flex-direction: column; /* Stack title and boxes vertically */
+  align-items: flex-end; /* Align to the right */
+}
+
+
+
+.book-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20em, 1fr));
+  gap: 0.5em;
+  width: auto; /* Adjust width as needed or use auto */
+  justify-content: flex-end; /* Keeps the grid aligned to the right */
+  margin-left: auto; 
+
+}
+
+
+.book-box {
+  display: grid;
+  grid-template-columns: 1fr minmax(8em, 12em);
+  grid-template-rows: min-content min-content min-content 1fr min-content;
+  column-gap: 0.5em;
+  row-gap: 0.25em;
+  padding: 0.5em;
+  background-color: var(--neutral-color);
+  border-radius: 5px;
+  padding-top: 2em;
+}
+
+
+img {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+
+.book-title {
+  font-weight: bold;
+}
+
+.book-price {
+  font-style: italic;
+}
+
+.buy-now-button {
+  grid-row: -2 / -1;
+  white-space: no-wrap;
+  font-weight: bold;
+  font-size: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 2em;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  justify-self: center;
+  width: max-content;
+}
+
+.buy-now-button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* This will put space between the sections */
+  align-items: flex-start; 
+  flex-wrap: nowrap
+}
+
+
+.query-section {
+  flex: 1; /* Allows the section to grow but with flex-basis at a specific width */
+  flex-basis: calc(50% - 2em); /* Subtracts the margin from the 50% width */
+  margin: 1em; /* Spacing between the sections */
+  
+}
+
+
+.search-results {
+  flex: 1; /* Allows the section to grow but with flex-basis at a specific width */
+  flex-basis: calc(50% - 2em); /* Subtracts the margin from the 50% width */
+  margin: 1em; /* Spacing between the sections */
+  
+  
+}
+
+.results-title {
+  font-size: 2em; /* Adjust the size as needed */
+  text-align: center;
+  width: 100%;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+  gap: 1em;
+  width: 100%;
+  justify-self: center; /* Center the grid inside the flex item */
+}
+
+/* Ensure book boxes are only as wide as their content */
+
+
+/* Center the category-page-title above the book boxes */
+.category-page-title {
+  text-align: center;
+  width: 100%;
+}
+
+/* Remove align-items: flex-end; from .movie-parents to prevent right aligning */
+.movie-parents {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Other styles can remain unchanged */
