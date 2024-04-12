@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieSearch</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie Searching" />
+
+    <!-- Import font-awesome icons -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"/>
+
+    <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+    <!-- global.css contains resets, custom properties, and utility classes -->
+    <link rel="stylesheet" href="static/css/global.css" />
+    <!-- start from the top-level component and work your way down -->
+    <link rel="stylesheet" href="static/css/app.css" />
+    <link rel="stylesheet" href="static/css/app-header.css" />
+    <link rel="stylesheet" href="static/css/header-dropdown.css" />
+    <link rel="stylesheet" href="static/css/app-footer.css" />
+    <link rel="stylesheet" href="static/css/category.css" />
+    <link rel="stylesheet" href="static/css/category-book-list.css" />
+    
+  </head>
+  <body>
+    
+      <header class="container">   
+          <h1 class="text-logo" style="font-size: 2em;">MovieSearch</h1>    
+      </header>
+      <main class="main-container">
+        <section class="query-section">
+          <div class="page-title-div">
+            <h1 class="category-page-title">Enter a Query</h1>
+          </div>
+        <section class="container dark-background">
+         
+          <div id="message-container" class="message-container">
+          
+           
+          </div> 
+         
+
+        
+       
+            <section class="search-bar-section">
+                <div class="search-bar-div">
+                    <form id="user-input-form" action='/getLLMResponse' method="post">
+                        <button type='submit'class="search-button"><i class="icon-search"></i></button>
+                        <input type="text" name='search-input' class="search-bar" placeholder="Search" id="search-input"/>
+                    </form>
+                </div>
+            </section>
+            </section>
+        </section>
+        <script src="static/js/animations.js"></script>
+
+        <section class="search-results" >
+          <div class="page-title-div">
+            <h1 class="category-page-title">Search Results</h1>
+          </div>
+          <div class="results-grid">
+            <div class="book-boxes">
+            
+              <div class="book-box">
+                <img src="/images/site/images/The_Imitation_Game.png" alt="Journals Kurt Cobain">
+                <div class="book-title">Imitation Game</div>
+                <div class="book-author">Directed By: </div>
+                <button class="buy-now-button">View</button>
+              </div>
+
+              <div class="book-box">
+                <img src="/images/site/images/socialnetwork.jpg" alt="Dune">
+                <div class="book-title">The Social Network</div>
+                <div class="book-author">Directed By: </div>
+                <button class="buy-now-button">View</button>
+              </div>
+
+              <div class="book-box">
+                <img src="/images/site/images/hackers.jpg" alt="Journals Kurt Cobain">
+                <div class="book-title">Hackers</div>
+                <div class="book-author">Directed By:</div>    
+                <button class="buy-now-button">View</button>
+              </div>
+
+              <div class="book-box">
+                <img src="/images/site/images/wargames.jpg" alt="Journals Kurt Cobain">
+                <div class="book-title">Wargames</div>
+                <div class="book-author">Directed By:</div>
+                <button class="buy-now-button">View</button>
+              </div>       
+              </div>
+              </div>
+        </section>
+    
+
+      </main>
+      <footer class="container"> 
+      <section class="links">
+          <div class="find-about-contact">
+          <a class="button" href=>About</a>
+          <a class="button" href=>Contact</a>
+      </div>
+        </section>
+        
+      </footer>
+    
+  </body>
+</html>

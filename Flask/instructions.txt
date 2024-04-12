@@ -1,0 +1,6 @@
+
+if you stop the program you have to use 
+sudo lsof -i tcp:5000
+After this command find PID# that says python and type
+kill -9 PID#
+
