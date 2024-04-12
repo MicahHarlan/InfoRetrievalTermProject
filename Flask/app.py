@@ -4,14 +4,9 @@ generator = llm.init_generator()
 
 app = Flask(__name__)
 
-#@app.route('/user_input',methods=['POST'])
-#def user_query():
-#	query = request.form.get('search-input', 'Default Value')	
-#	print(f'Query: {query}')
-#	return 'Ello'
-
 @app.route('/getLLMResponse',methods=['POST'])
 def llm_response():
+	'''This function deals with useer input and LLM output.'''
 	data = request.get_json()
 	user_input = data.get('userInput')
     # Process the input and generate a response
@@ -23,5 +18,8 @@ def home():
 	return render_template('index.html')
 
 if __name__ == '__main__':
-	app.run()
-
+	#For running on local host.
+	app.run(debug=True)
+	#To run on so people connected to wifi can connect.
+	#flask run on command line
+	#app.run(host='0.0.0.0', port=5000)	
