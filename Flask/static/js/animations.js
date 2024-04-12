@@ -30,8 +30,6 @@ function addMessage(sender, message, isBot) {
     messageContainer.appendChild(messageDiv);
     messageContainer.scrollTop = messageContainer.scrollHeight;
 }
-
-
 document.getElementById('user-input-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -49,14 +47,54 @@ document.getElementById('user-input-form').addEventListener('submit', function(e
     })
     .then(response => response.json()) // Handle JSON response
     .then(data => {
-        // Simulate bot response after a delay
+        // Display the response message
         setTimeout(() => {
             addMessage('MovieSearch', data.message, true); // Assume data.message contains the response
-        }, 800);
+        }, 400);
+
+        // Handle movie titles if they exist
+        const movieContainer = document.getElementById('movies-container'); // Ensure this container exists in your HTML
+        movieContainer.innerHTML = ''; // Clear previous movies
+        if (data.titles && data.titles.length > 0) {
+            data.titles.forEach(title => {
+                addMovieBox(title, movieContainer); // Function to display movie titles
+            });
+        }
     })
     .catch(error => {
         console.error('Error fetching data:', error);
         addMessage('MovieSearch', 'Failed to fetch data.', true); // Display error message
     });
 });
+
+// Function to display each movie in its own box
+function addMovieBox(title, container) {
+    const box = document.createElement('div');
+    box.className = 'book-box';
+
+    const img = document.createElement('img');
+    img.src = '/images/site/default-movie.png'; // Path to a default image
+    img.alt = title;
+
+    const titleDiv = document.createElement('div');
+    titleDiv.className = 'book-title';
+    titleDiv.textContent = title;
+
+    const authorDiv = document.createElement('div');
+    authorDiv.className = 'book-author';
+    authorDiv.textContent = 'Directed By: Unknown'; // You can dynamically set this if your API provides it
+
+    const button = document.createElement('button');
+    button.className = 'buy-now-button';
+    button.textContent = 'View';
+
+    // Append all elements to the box
+    box.appendChild(img);
+    box.appendChild(titleDiv);
+    box.appendChild(authorDiv);
+    box.appendChild(button);
+
+    // Append the box to the container
+    container.appendChild(box);
+}
 

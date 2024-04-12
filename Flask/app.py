@@ -10,8 +10,9 @@ def llm_response():
 	data = request.get_json()
 	user_input = data.get('userInput')
     # Process the input and generate a response
-	response_message = llm.get_llm(user_input)
-	return jsonify({'message': response_message})
+	response_message,titles = llm.get_llm(user_input)
+	
+	return jsonify({'message': response_message,'titles':titles})
 
 @app.route('/')
 def home():

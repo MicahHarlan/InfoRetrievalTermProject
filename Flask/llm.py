@@ -1,4 +1,5 @@
 import cohere
+import re
 co = cohere.Client('vm4DXIEQpEBN9YFD19VTnxYWTRCeHNyge71iMWgk')
 
 '''
@@ -18,9 +19,26 @@ Make sure this returns a string.
 #	return responses[0]['generated_text'] 
 #	# Generate
 
+def	parse_for_titles(string):
+	matches = re.findall(r'<<([^>]*)>>', string)
+	return list(set(matches))
+def clean_output(text):
+	cleaned_text = re.sub(r'<<|>>', '', text)
+	return cleaned_text
+
+
+preamble = '''Topics are only about movies.
+Keep the output short.
+When a movie title is mentioned surround the titles with <<MovieName>> 
+If the movie is something you can't find do not put in the <<MovieName>> format. 
+When responing start with:'Welcome to MovieSearch.'''
+
 def get_llm(prompt):
-	response = co.generate(
-  	prompt=prompt
+	response = co.chat(	
+	preamble=preamble,
+  	message=prompt
 	)
-	return response.generations[0].text
+	titles = parse_for_titles(response.text)
+	print(titles)
+	return clean_output(response.text),titles
 
