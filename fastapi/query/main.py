@@ -56,8 +56,6 @@ def parse_movie_year(full_movie_title):
 @app.post("/listofmovies/")
 async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db), response_model=list[schemas.Movie]):
     movies = []
-    # tts = ['The Room (2019)']
-    tts = ['The Room (2019)', 'The Room (2003)']
     for t in tts:
         print(parse_movie_year(t))
         ret = crud.getMovieByTitleAndYear(db, parse_movie_year(t)[0], parse_movie_year(t)[1])
