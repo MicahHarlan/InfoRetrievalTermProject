@@ -29,8 +29,8 @@ def clean_output(text):
 
 preamble = '''Topics are only about movies.
 Keep the output short.
-When a movie title is mentioned surround the titles with <<MovieName>> 
-If the movie is something you can't find do not put in the <<MovieName>> format. 
+When a movie title is mentioned surround the titles with <<MovieName (Year)>> 
+If the movie is something you can't find do not put in the <<MovieName (Year)>> format. 
 When responing start with:'Welcome to MovieSearch.'''
 
 def get_llm(prompt):
