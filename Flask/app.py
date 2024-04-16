@@ -12,7 +12,7 @@ def llm_response():
 	user_input = data.get('userInput')
     # Process the input and generate a response
 	response_message,titles = llm.get_llm(user_input)
-	responses = [send_to_fastapi(name) for name in titles]
+	responses = get_list_of_movies_by_titles(titles)   #[send_to_fastapi(name) for name in titles]
 	movies= []
 	for r in responses:
 		image_url = f"https://image.tmdb.org/t/p/w185{r[0]['image']}"
