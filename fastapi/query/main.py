@@ -60,6 +60,8 @@ async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db), res
         print(parse_movie_year(t))
         ret = crud.getMovieByTitleAndYear(db, parse_movie_year(t)[0], parse_movie_year(t)[1])
         movies.append(ret)
+    for movie in movies:
+        print(movie.primaryTitle, movie.Year, movie.avgRating, movie.numVotes, movie.plot, movie.image)
     return movies
 
 @app.get("/search", response_model=list[schemas.Movie])
