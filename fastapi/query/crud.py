@@ -3,6 +3,8 @@ from sqlalchemy.orm import Session
 import sqlalchemy.orm as _orm
 import models
 
+def getMovieByTitleAndYear(db: _orm.Session, title: str, year: int):
+    return db.query(models.Movie).filter(models.Movie.primaryTitle.like(f'%{title}%')).filter(models.Movie.Year == year).first()
 
 def getMovies(db: _orm.Session, skip: int = 0, limit: int = 100):
     return db.query(models.Movie).offset(skip).limit(limit).all()

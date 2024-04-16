@@ -48,18 +48,21 @@ def read_directors(skip: int = 0, limit: int = 100, db: Session = Depends(get_db
     directors = crud.getDirectors(db, skip=skip, limit=limit)
     return directors
 
+def parse_movie_year(full_movie_title):
+    year = full_movie_title[-5:-1]
+    title = full_movie_title[:-7]
+    return title, year
+
 @app.post("/listofmovies/")
-async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db)):
+async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db), response_model=list[schemas.Movie]):
+    # tts = ['Transformers: Dark of the Moon (2011)', 'Bumblebee (2018)', 'Transformers: Revenge of the Fallen (2009)', 'Transformers: The Last Knight (2017)', 'Transformers (2007)', '2012 (2009)']
+    tts = ['Chaos (2005)']
     print(tts)
-    first_shot = []
     movies = []
     for t in tts:
-        full_match_title = crud.getMovieIdsByTitle(db, t)
-        for movie_id, *_ in full_match_title:
-            first_shot.append(movie_id)
-    for movie_id in first_shot:
-        movie = crud.getMovieById(db, movie_id)
-        movies.append(movie)
+        print(parse_movie_year(t))
+        ret = crud.getMovieByTitleAndYear(db, parse_movie_year(t)[0], parse_movie_year(t)[1])
+        movies.append(ret)
     return movies
 
 @app.get("/search", response_model=list[schemas.Movie])
