@@ -1,3 +1,5 @@
+import json
+
 import requests
 from flask import Flask, render_template,jsonify,request
 import llm
@@ -27,6 +29,25 @@ def send_to_fastapi(query):
     params = {'q': query}
     response = requests.get(url, params=params)
     return response.json()
+
+def get_list_of_movies_by_titles(titles):
+	url = 'http://127.0.0.1:8000/listofmovies/'
+	titles = ['Forrest Gump', 'The Matrix', 'The Godfather']
+	headers = {'Content-Type': 'application/json'}  # Set header to application/json
+	body = json.dumps(titles)  # Convert the list to a JSON formatted string
+
+	try:
+		response = requests.post(url, data=body, headers=headers)
+		response.raise_for_status()  # Raises an HTTPError for bad responses
+		return response.json()  # Return the JSON response
+	except requests.exceptions.HTTPError as errh:
+		return f"HTTP error occurred: {errh}"
+	except requests.exceptions.ConnectionError as errc:
+		return f"Error Connecting: {errc}"
+	except requests.exceptions.Timeout as errt:
+		return f"Timeout Error: {errt}"
+	except requests.exceptions.RequestException as err:
+		return f"An error occurred: {err}"
 
 if __name__ == '__main__':
 	#For running on local host.
