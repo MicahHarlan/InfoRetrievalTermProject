@@ -55,9 +55,6 @@ def parse_movie_year(full_movie_title):
 
 @app.post("/listofmovies/")
 async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db), response_model=list[schemas.Movie]):
-    # tts = ['Transformers: Dark of the Moon (2011)', 'Bumblebee (2018)', 'Transformers: Revenge of the Fallen (2009)', 'Transformers: The Last Knight (2017)', 'Transformers (2007)', '2012 (2009)']
-    tts = ['Chaos (2005)']
-    print(tts)
     movies = []
     for t in tts:
         print(parse_movie_year(t))
