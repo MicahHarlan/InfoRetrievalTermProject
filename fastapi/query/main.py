@@ -48,6 +48,20 @@ def read_directors(skip: int = 0, limit: int = 100, db: Session = Depends(get_db
     directors = crud.getDirectors(db, skip=skip, limit=limit)
     return directors
 
+@app.post("/listofmovies/")
+async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db)):
+    print(tts)
+    first_shot = []
+    movies = []
+    for t in tts:
+        full_match_title = crud.getMovieIdsByTitle(db, t)
+        for movie_id, *_ in full_match_title:
+            first_shot.append(movie_id)
+    for movie_id in first_shot:
+        movie = crud.getMovieById(db, movie_id)
+        movies.append(movie)
+    return movies
+
 @app.get("/search", response_model=list[schemas.Movie])
 def query(q: str, db: Session = Depends(get_db)):
     # Full match
