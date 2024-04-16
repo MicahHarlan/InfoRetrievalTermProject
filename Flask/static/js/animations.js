@@ -4,7 +4,7 @@ function typeWriterEffect(text, targetElement) {
         if (i < text.length) {
             targetElement.innerHTML += text.charAt(i);
             i++;
-            setTimeout(typing, 20); // Speed of typing
+            setTimeout(typing, 10); // Speed of typing
         }
     }
     typing();
@@ -56,8 +56,8 @@ document.getElementById('user-input-form').addEventListener('submit', function(e
         const movieContainer = document.getElementById('movies-container'); // Ensure this container exists in your HTML
         movieContainer.innerHTML = ''; // Clear previous movies
         if (data.titles && data.titles.length > 0) {
-            data.titles.forEach(title => {
-                addMovieBox(title, movieContainer); // Function to display movie titles
+            data.titles.forEach(movie => {
+                addMovieBox(movie, movieContainer); // Function to display movie titles
             });
         }
     })
@@ -68,17 +68,18 @@ document.getElementById('user-input-form').addEventListener('submit', function(e
 });
 
 // Function to display each movie in its own box
-function addMovieBox(title, container) {
+function addMovieBox(movie, container) {
     const box = document.createElement('div');
     box.className = 'book-box';
 
     const img = document.createElement('img');
-    img.src = '/images/site/default-movie.png'; // Path to a default image
-    img.alt = title;
+    img.src = movie.image; // Path to a default image
+    img.alt = movie.title;
+	img.style.width = '150px';	
 
     const titleDiv = document.createElement('div');
     titleDiv.className = 'book-title';
-    titleDiv.textContent = title;
+    titleDiv.textContent = movie.title;
 
     const authorDiv = document.createElement('div');
     authorDiv.className = 'book-author';
