@@ -15,11 +15,14 @@ def llm_response():
 	responses = get_list_of_movies_by_titles(titles)   #[send_to_fastapi(name) for name in titles]
 	print(titles)
 	movies= []
+
 	for r in responses:
+		print(r)
+	
 		image_url = f"https://image.tmdb.org/t/p/w185{r['image']}"
 		#movie = {'title':r['primaryTitle'],'director':r['directors'],'image':image_url}
 		movie = {'title':r['primaryTitle'],'image':image_url}
-		print(movie)
+		
 		movies.append(movie)
 	clean_movies = [movie if isinstance(movie, dict) else movie.__dict__ for movie in movies]
 	
