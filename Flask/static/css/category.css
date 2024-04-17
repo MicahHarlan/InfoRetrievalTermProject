@@ -46,7 +46,7 @@
 }
 
 .chatBot{
-  font-style: Bold;
+  font-style:Bold;
   color: black
 }
 
@@ -56,6 +56,34 @@
   margin: 0 auto;
   
 }
+.view-container {
+  display: flex; /* Establishes a flex container */
+  align-items: center; /* Aligns children vertically in the center */
+  justify-content: flex-start; /* Aligns children horizontally to the start */
+}
+
+.view-container img {
+  margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.movie-info {
+
+  margin-left: 20px; /* Adds some space between the image and the text content */
+}
+
+.actors-grid {
+    display: flex; /* Use flex display */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    gap: 16px; /* Adjust the space between items */
+}
+
+.actors-grid li {
+    width: 200px; /* Set a fixed width for each actor's name */
+    line-height: 1.5; /* Adjust line spacing for better readability */
+    margin-bottom: 8px; /* Adds a margin at the bottom of each list item */
+}
+
+
 
 
 .typewriter p {

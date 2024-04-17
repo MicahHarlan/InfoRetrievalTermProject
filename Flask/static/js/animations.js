@@ -88,6 +88,37 @@ document.getElementById('user-input-form').addEventListener('submit', function(e
     });
 });
 
+
+document.getElementById('clearButton').addEventListener('click', function() {
+    const messageContainer = document.getElementById('message-container');
+    const messages = messageContainer.querySelectorAll('.message'); // Use the appropriate selector for your messages
+
+    messages.forEach(function(msg) {
+        msg.remove(); // This removes each message element from the document
+    });
+
+
+    // Clear the message container's content
+
+    // Optionally send a POST request to the Flask server to clear the session or server-side data
+    fetch('/clear', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        // If you need to send a body with the POST request, uncomment the next line
+        // body: JSON.stringify({ clear: true })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message); // Log the server's response message
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+
 // Function to display each movie in its own box
 function addMovieBox(movie, container) {
     const box = document.createElement('div');
@@ -109,6 +140,26 @@ function addMovieBox(movie, container) {
     const button = document.createElement('button');
     button.className = 'buy-now-button';
     button.textContent = 'View';
+    button.addEventListener('click', function() {
+    fetch('/view', { // Your server endpoint to handle the POST request
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title: movie.title}) // Send only movie.title in the POST request body
+    })
+    .then(response => {
+        if (response.redirected) {
+            window.location.href = response.url; // Redirect to the response's URL if redirected
+        } else {
+            // Handle any other responses here, if necessary
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
 
     // Append all elements to the box
     box.appendChild(img);
