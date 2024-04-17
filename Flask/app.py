@@ -13,12 +13,16 @@ def llm_response():
     # Process the input and generate a response
 	response_message,titles = llm.get_llm(user_input)
 	responses = get_list_of_movies_by_titles(titles)   #[send_to_fastapi(name) for name in titles]
-	print(titles)
 	movies= []
-
-	for r in responses:
-		print(r)
+	print(f'RESPONSS: {responses}')
 	
+	for r in responses:
+		if type(r) == str:
+			break	
+		print(type(responses))
+		if not r: 
+			continue
+		print(f'r: {r}')
 		image_url = f"https://image.tmdb.org/t/p/w185{r['image']}"
 		#movie = {'title':r['primaryTitle'],'director':r['directors'],'image':image_url}
 		movie = {'title':r['primaryTitle'],'image':image_url}
@@ -40,7 +44,6 @@ def send_to_fastapi(query):
 
 def get_list_of_movies_by_titles(titles):
 	url = 'http://127.0.0.1:8000/listofmovies/'
-
 	headers = {'Content-Type': 'application/json'}  # Set header to application/json
 	body = json.dumps(titles)  # Convert the list to a JSON formatted string
 

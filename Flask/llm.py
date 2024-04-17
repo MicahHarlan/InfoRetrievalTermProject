@@ -21,8 +21,10 @@ Make sure this returns a string.
 
 def	parse_for_titles(string):
 	matches = re.findall(r'<<([^>]*)>>', string)
-	return list(set(matches))
+
+	return list(matches)
 def clean_output(text):
+	print(text)
 	cleaned_text = re.sub(r'<<|>>', '', text)
 	return cleaned_text
 
@@ -32,13 +34,17 @@ Keep the output short.
 When a movie title is mentioned surround the titles with <<MovieName (Year)>> 
 If the movie is something you can't find do not put in the <<MovieName (Year)>> format. 
 When responing start with:'Welcome to MovieSearch.'''
+chat_history = []
 
 def get_llm(prompt):
 	response = co.chat(	
 	preamble=preamble,
-  	message=prompt
+  	message=prompt,
+	chat_history=chat_history
 	)
+	chat_history.append({'role':'USER','message':prompt})
+	chat_history.append({'role':'CHATBOT','message':response.text})
 	titles = parse_for_titles(response.text)
-	print(titles)
+	print(chat_history)
 	return clean_output(response.text),titles
 

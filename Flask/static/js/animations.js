@@ -1,14 +1,34 @@
 function typeWriterEffect(text, targetElement) {
     let i = 0;
+    let isNewLineNeeded = false; // Flag to check if a new line is needed
+
     function typing() {
         if (i < text.length) {
+            // Check if the current character starts a list item and handle new line
+            if (text.charAt(i) === '-' && (i === 0 || text.charAt(i - 1) === '\n')) {
+                if (!isNewLineNeeded && i !== 0) { // Add a line break before the list item if not at the start and no new line before
+                    targetElement.innerHTML += '<br/>';
+                }
+                isNewLineNeeded = false; // Reset the flag as line break is handled
+            }
+
             targetElement.innerHTML += text.charAt(i);
+
+            // Set isNewLineNeeded to true after a list item
+            if (text.charAt(i) === '\n' && text.charAt(i - 1) === '.') {
+                isNewLineNeeded = true;
+            }
+
             i++;
-            setTimeout(typing, 10); // Speed of typing
+            setTimeout(typing, 10); // Speed of typing can be adjusted here
+        } else if (isNewLineNeeded) { // After finishing the text, check if a new line is needed
+            targetElement.innerHTML += '<br/>';
         }
     }
     typing();
 }
+
+
 
 function addMessage(sender, message, isBot) {
     const messageContainer = document.getElementById('message-container');
@@ -54,8 +74,9 @@ document.getElementById('user-input-form').addEventListener('submit', function(e
 
         // Handle movie titles if they exist
         const movieContainer = document.getElementById('movies-container'); // Ensure this container exists in your HTML
-        movieContainer.innerHTML = ''; // Clear previous movies
+
         if (data.titles && data.titles.length > 0) {
+        	movieContainer.innerHTML = ''; // Clear previous movies
             data.titles.forEach(movie => {
                 addMovieBox(movie, movieContainer); // Function to display movie titles
             });
