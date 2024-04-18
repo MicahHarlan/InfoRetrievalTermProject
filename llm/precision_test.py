@@ -19,7 +19,7 @@ def load_token():
 
 co = cohere.Client(load_token())
 
-tests = pd.read_csv('/llm/pg/tag_prompt_titles.csv')
+tests = pd.read_csv('/Users/baiyizhang/dev/PycharmProjects/cs5604/InfoRetrievalTermProject/llm/pg/tag_prompt_titles.csv')
 
 llm_results = pd.DataFrame(columns=['Prompt', 'Actual', 'Expected', 'Precision', 'Recall', 'F1'])
 
@@ -50,8 +50,18 @@ for index, row in tqdm(tests.iterrows()):
     for title in expected_titles:
         if title not in result_titles:
             false_negative += 1
-    precision = true_positive / (true_positive + false_positive)
-    recall = true_positive / (true_positive + false_negative)
+    false_negative = min(12, false_negative)
+
+    if true_positive + false_positive == 0:
+        precision = 0
+    else:
+        precision = true_positive / (true_positive + false_positive)
+
+    if true_positive + false_negative == 0:
+        recall = 0
+    else:
+        recall = true_positive / (true_positive + false_negative)
+
     if precision + recall == 0:
         f1 = 0
     else:
