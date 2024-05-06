@@ -164,4 +164,4 @@ cython_debug/
 movie.sql
 movie.db
 config/
-/llm/ml-25m
+/metrics/ml-25m
