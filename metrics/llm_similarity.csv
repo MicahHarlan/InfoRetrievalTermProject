@@ -1,0 +1,22 @@
+,Prompt,Actual,Expected,Precision,Recall,F1
+0,Harry Potter and the Sorcerer's Stone (2001),6,7,0.0,0.0,0
+1,Transformers (2007),11,4,0.0,0.0,0
+2,Die Hard (1988),7,4,0.0,0.0,0
+3,The Matrix (1999),6,3,0.0,0.0,0
+4,X-Men (2000),6,6,0.0,0.0,0
+5,Home Alone (1990),11,4,0.0,0.0,0
+6,James Bond: Dr. No (1962),7,6,0.14285714285714285,0.16666666666666666,0.15384615384615383
+7,Star Wars: Episode IV - A New Hope (1977),6,5,0.0,0.0,0
+8,The Terminator (1984),9,5,0.0,0.0,0
+9,Mission: Impossible (1996),12,5,0.0,0.0,0
+10,Toy Story (1995),12,3,0.0,0.0,0
+11,Back to the Future (1985),8,2,0.0,0.0,0
+12,Pirates of the Caribbean: The Curse of the Black Pearl (2003),7,4,0.0,0.0,0
+13,Jurassic Park (1993),8,5,0.25,0.4,0.3076923076923077
+14,Madagascar (2005),9,3,0.0,0.0,0
+15,Men in Black (1997),6,3,0.0,0.0,0
+16,Iron Man (2008),6,2,0.0,0.0,0
+17,Shrek (2001),6,4,0.16666666666666666,0.25,0.2
+18,Finding Nemo (2003),7,1,0.0,0.0,0
+19,Despicable Me (2010),8,4,0.125,0.25,0.16666666666666666
+20,The Hunger Games (2012),6,3,0.0,0.0,0
