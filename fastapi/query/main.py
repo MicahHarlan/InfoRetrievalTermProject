@@ -79,8 +79,8 @@ async def read_list_of_movies(tts: list[str], db: Session = Depends(get_db), res
         except:
             ret = None
         movies.append(ret)
-    for movie in movies:
-        print(movie.primaryTitle, movie.Year, movie.avgRating, movie.numVotes, movie.plot, movie.image)
+    # for movie in movies:
+    #     print(movie.primaryTitle, movie.Year, movie.avgRating, movie.numVotes, movie.plot, movie.image)
     return movies
 
 

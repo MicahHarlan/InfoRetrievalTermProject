@@ -1,6 +1,6 @@
 import cohere
 import re
-co = cohere.Client('vm4DXIEQpEBN9YFD19VTnxYWTRCeHNyge71iMWgk')
+co = cohere.Client('POSIOXCEkKOxCD4jLMzp2TIobqlSefmNAW7ZzqRq')
 
 '''
 The tokenizer or generators should run in this function and set to a var

@@ -65,6 +65,14 @@ actors_popular = actors[actors['ActorID'].isin(actor_movie_popular['ActorID'])].
 # director_names_popular.to_csv('director_names_popular.csv',index=False)
 # movie_genres_popular.to_csv('movie_genres_popular.csv',index=False)
 
+actor_movie_popular_with_name = pd.merge(actor_movie_popular, actors, on='ActorID')
+actor_movie_popular_grouped_by_movie = actor_movie_popular_with_name.groupby('MovieID').agg({'Name':lambda x: list(x)})
+
+movies_actors = pd.merge(movies_popular, actor_movie_popular_grouped_by_movie, on='tconst')
+
+director_movies = pd.merge(df2, director_names_popular, on='nconst')
+director_movies = director_movies[director_movies['tconst'].isin(movies_popular['tconst'])]
+director_movies = director_movies[['tconst','primaryName']]
 
 """
 ==============================

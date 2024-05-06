@@ -80,6 +80,7 @@ def view_page():
 	return render_template('view.html', movie=movie_info)
 
 
+
 def send_to_fastapi(query):	
 	url = 'http://127.0.0.1:8000/search'
 	params = {'q': query}
