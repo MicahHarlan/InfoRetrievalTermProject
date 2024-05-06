@@ -1,11 +1,521 @@
 ,Prompt,Actual,Expected,Precision,Recall,F1
-0,'007 (series)',7,57,0.7142857142857143,0.08771929824561403,0.15625
-1,'18th century movies',5,201,0.4,0.009950248756218905,0.019417475728155338
+0,'007 (series)',7,57,0.7142857142857143,0.29411764705882354,0.4166666666666667
+1,'18th century movies',5,201,0.4,0.14285714285714285,0.21052631578947364
 2,'1920s',6,63,0.0,0.0,0.0
-3,'1930s movies',8,528,0.75,0.011363636363636364,0.022388059701492536
-4,'1950s movies',7,207,0.42857142857142855,0.014492753623188406,0.028037383177570093
-5,'1960s movies',9,186,0.1111111111111111,0.005376344086021506,0.010256410256410256
-6,'1970s movies',9,525,0.1111111111111111,0.0019047619047619048,0.0037453183520599247
-7,'1980s movies',5,363,0.6,0.008264462809917356,0.01630434782608696
-8,'19th century movies',5,185,0.2,0.005405405405405406,0.010526315789473684
-9,'3d',5,154,1.0,0.032467532467532464,0.06289308176100628
+3,'1930s movies',6,528,0.6666666666666666,0.25,0.36363636363636365
+4,'1950s movies',7,207,0.5714285714285714,0.25,0.34782608695652173
+5,'1960s movies',9,186,0.1111111111111111,0.07692307692307693,0.09090909090909093
+6,'1970s movies',6,525,0.3333333333333333,0.14285714285714285,0.2
+7,'1980s movies',5,363,0.6,0.2,0.3
+8,'19th century movies',5,185,0.2,0.07692307692307693,0.1111111111111111
+9,'3d',5,154,1.0,0.29411764705882354,0.45454545454545453
+10,'70mm',0,200,0.0,0.0,0.0
+11,'80s movies',7,471,0.2857142857142857,0.14285714285714285,0.19047619047619047
+12,'9/11 related movies',4,23,0.5,0.14285714285714285,0.22222222222222224
+13,'What are some popular movies created by the animation studio Aardman?',4,6,0.5,0.3333333333333333,0.4
+14,'What are some popular movies created by Aardman Studios?',5,23,0.4,0.14285714285714285,0.21052631578947364
+15,'abortion',1,20,0.0,0.0,0.0
+16,'What are some examples of movies with absurd or surreal themes?',5,1181,1.0,0.29411764705882354,0.45454545454545453
+17,'What are some popular action movies that you would recommend?',5,2060,0.8,0.25,0.38095238095238093
+18,'action packed',5,967,0.8,0.25,0.38095238095238093
+19,'adaptation',3,1691,0.0,0.0,0.0
+20,'What are some popular movies adapted from books?',6,1570,0.3333333333333333,0.14285714285714285,0.2
+21,'What are some popular movies adapted from comic books?',10,216,0.5,0.29411764705882354,0.37037037037037035
+22,'What are some popular movies adapted from video games?',5,48,1.0,0.29411764705882354,0.45454545454545453
+23,'What are some movies that deal with the theme of addiction?',5,299,0.8,0.25,0.38095238095238093
+24,'What are some popular movies that depict adolescence or teenage experiences?',5,616,0.4,0.14285714285714285,0.21052631578947364
+25,'What are some popular movies that involve themes of adoption or have characters dealing with adoption-related issues?',5,190,0.6,0.2,0.3
+26,'adultery',5,640,0.6,0.2,0.3
+27,'What are some popular adventure movies that you can recommend?',5,1160,0.4,0.14285714285714285,0.21052631578947364
+28,'What are some movies that portray affectionate relationships or have a strong focus on love and tenderness?',6,1595,0.6666666666666666,0.25,0.36363636363636365
+29,'Can you suggest a movie from the AFI 100 list that has a significant impact on the film industry?',4,67,0.75,0.2,0.31578947368421056
+30,'afi 100 (laughs)',4,85,0.0,0.0,0.0
+31,'What are some famous movie quotes from the AFI 100 list?',6,169,0.5,0.2,0.28571428571428575
+32,'What are some popular movies set in Africa or featuring African themes?',6,159,0.8333333333333334,0.29411764705882354,0.4347826086956522
+33,'What are some popular movies related to the theme of 'afterlife'?',5,116,0.4,0.14285714285714285,0.21052631578947364
+34,'What are some movies that explore the theme of aging and its impact on characters' lives?',5,180,0.6,0.2,0.3
+35,'What are some movies related to the theme of AIDS?',5,102,0.8,0.25,0.38095238095238093
+36,'What are some popular movies related to the theme of airplanes or aviation?',5,22,0.0,0.0,0.0
+37,'What are some popular movies related to the theme of airports?',5,23,0.6,0.2,0.3
+38,'What are some movies related to the theme of Alaska?',5,35,0.6,0.2,0.3
+39,'What movie is related to Alcatraz and has a thrilling storyline?',2,10,0.5,0.1,0.16666666666666669
+40,'What are some movies that deal with the theme of alcoholism?',5,62,1.0,0.29411764705882354,0.45454545454545453
+41,'What are some popular movies related to the theme of aliens or extraterrestrial life?',5,367,0.6,0.2,0.3
+42,'What are some popular movies related to the theme of alien invasion?',5,162,0.6,0.2,0.3
+43,'What are some popular movies related to the theme of aliens?',5,302,0.4,0.14285714285714285,0.21052631578947364
+44,'What are some examples of movies that use allegory as a central theme?',5,1364,0.2,0.07692307692307693,0.1111111111111111
+45,'What are some popular movies directed by Pedro Almodóvar?',7,26,0.14285714285714285,0.07692307692307693,0.1
+46,'What are some movie examples where the protagonist feels isolated or struggles with loneliness?',5,195,0.4,0.14285714285714285,0.21052631578947364
+47,'What are some movies featuring characters with alter egos?',5,272,0.4,0.14285714285714285,0.21052631578947364
+48,'What are some popular movies with alternate endings?',9,227,0.2222222222222222,0.14285714285714285,0.17391304347826086
+49,'What are some popular movies that explore alternate history or feature alternate timelines?',6,108,0.3333333333333333,0.14285714285714285,0.2
+50,'What are some movies related to the theme of alternate reality?',5,326,0.6,0.2,0.3
+51,'What are some popular movies featuring alternate universes or parallel realities?',5,102,0.2,0.07692307692307693,0.1111111111111111
+52,'What are some movies known for their amazing cinematography?',5,465,0.8,0.25,0.38095238095238093
+53,'What are some movies known for their amazing photography?',10,464,0.4,0.25,0.3076923076923077
+54,'What are some popular movies related to the American Civil War?',5,48,1.0,0.29411764705882354,0.45454545454545453
+55,'What are some popular movies that involve the theme of amnesia?',5,70,0.8,0.25,0.38095238095238093
+56,'Amy Smart has been in various movies. Can you suggest a few of her notable film roles?',6,85,0.6666666666666666,0.25,0.36363636363636365
+57,'What are some popular movies featuring android(s) or cyborg(s) as main characters or significant roles?',7,96,0.5714285714285714,0.25,0.34782608695652173
+58,'androids',6,79,0.5,0.2,0.28571428571428575
+59,'Animal movie',4,254,1.0,0.25,0.4
+60,'What are some popular movies featuring animals as main characters or significant roles?',5,495,1.0,0.29411764705882354,0.45454545454545453
+61,'What are some popular animated movies?',5,384,0.6,0.2,0.3
+62,'What are some popular animated movies?',5,537,0.6,0.2,0.3
+63,'anime',5,140,0.4,0.14285714285714285,0.21052631578947364
+64,'What are some movies related to the theme of Antarctica?',5,36,0.6,0.2,0.3
+65,'What are some movies featuring anti-hero characters?',5,464,0.6,0.2,0.3
+66,'What are some movies that address the theme of anti-semitism?',5,105,0.6,0.2,0.3
+67,'What are some movies that have a strong anti-war theme or message?',6,133,0.8333333333333334,0.29411764705882354,0.4347826086956522
+68,'What are some popular movies related to the apocalypse theme?',5,459,0.8,0.25,0.38095238095238093
+69,'What are some popular movies related to the theme of archaeology?',5,28,0.4,0.14285714285714285,0.21052631578947364
+70,'What are some popular movies related to Argentina?',5,52,0.2,0.07692307692307693,0.1111111111111111
+71,'What are some movies related to the theme of an arms dealer?',5,92,0.4,0.14285714285714285,0.21052631578947364
+72,'What are some movies featuring Arnold Schwarzenegger?',7,41,0.5714285714285714,0.25,0.34782608695652173
+73,'What are some movies that have a strong focus on art or feature artistic themes?',5,977,1.0,0.29411764705882354,0.45454545454545453
+74,'What are some popular art house movies?',5,729,0.4,0.14285714285714285,0.21052631578947364
+75,'What are some popular movies that involve the theme of artificial intelligence?',6,67,0.3333333333333333,0.14285714285714285,0.2
+76,'What are some movies related to the theme of artists or their lives?',5,354,0.8,0.25,0.38095238095238093
+77,'What are some artistic movies that have received critical acclaim?',5,975,0.4,0.14285714285714285,0.21052631578947364
+78,'What are some artsy movies that have gained critical acclaim?',6,192,0.3333333333333333,0.14285714285714285,0.2
+79,'What are some popular movies featuring an assassin character?',9,473,0.2222222222222222,0.14285714285714285,0.17391304347826086
+80,'What are some popular movies related to the theme of assassination?',5,685,0.4,0.14285714285714285,0.21052631578947364
+81,'What are some popular movies featuring assassins as main characters or significant roles?',8,209,0.375,0.2,0.26086956521739135
+82,'What are some popular movies featuring astronauts as main characters or significant roles?',5,127,0.6,0.2,0.3
+83,'What are some movies that explore or relate to the theme of atheism?',5,64,0.2,0.07692307692307693,0.1111111111111111
+84,'atmospheric',4,1638,0.5,0.14285714285714285,0.22222222222222224
+85,'What are some popular movies related to the theme of Australia?',5,156,0.8,0.25,0.38095238095238093
+86,'What are some popular Australian movies?',10,107,0.7,0.3684210526315789,0.48275862068965514
+87,'What are some movies related to the author Alan Moore?',5,7,0.2,0.14285714285714285,0.16666666666666666
+88,'What are some popular movies related to author Neil Gaiman?',7,38,0.2857142857142857,0.14285714285714285,0.19047619047619047
+89,'What are some movies that deal with the theme of autism?',5,21,0.2,0.07692307692307693,0.1111111111111111
+90,'What are some popular movies related to aviation?',8,64,0.5,0.25,0.3333333333333333
+91,'What are some awesome movies that people generally love?',8,58,0.125,0.07692307692307693,0.09523809523809525
+92,'What are some movies known for having an awesome soundtrack?',5,454,0.4,0.14285714285714285,0.21052631578947364
+93,'What are some examples of movies considered to be awful or have received negative reviews?',5,163,0.4,0.14285714285714285,0.21052631578947364
+94,'bad',0,272,0.0,0.0,0.0
+95,'bad acting',5,715,0.6,0.2,0.3
+96,'bad cgi',4,484,0.25,0.07692307692307693,0.11764705882352941
+97,'bad ending',7,549,0.2857142857142857,0.14285714285714285,0.19047619047619047
+98,'bad plot',3,880,0.3333333333333333,0.07692307692307693,0.125
+99,'bad science',4,112,0.0,0.0,0.0
+100,'bad script',3,112,0.0,0.0,0.0
+101,'bad sequel',5,11,0.2,0.09090909090909091,0.12500000000000003
+102,'What are some popular movies related to the theme of ballet?',5,20,0.6,0.2,0.3
+103,'What are some popular movies that involve bank robberies as a central theme?',6,162,0.5,0.2,0.28571428571428575
+104,'What are some popular movies related to the theme of baseball?',10,44,0.6,0.3333333333333333,0.42857142857142855
+105,'What are some popular movies based on books?',5,1737,0.0,0.0,0.0
+106,'What are some popular movies based on comic books or graphic novels?',10,263,0.7,0.3684210526315789,0.48275862068965514
+107,'What are some movie adaptations of plays?',6,548,0.6666666666666666,0.25,0.36363636363636365
+108,'based on a true story',4,582,0.5,0.14285714285714285,0.22222222222222224
+109,'What are some popular movies based on TV shows?',5,140,0.0,0.0,0.0
+110,'What are some popular movies based on video games?',5,86,0.8,0.25,0.38095238095238093
+111,'What are some popular movies based on books?',5,1374,0.0,0.0,0.0
+112,'What are some popular movies based on comic books or comics?',7,140,0.2857142857142857,0.14285714285714285,0.19047619047619047
+113,'What are some popular movies related to the Batman character or storyline?',8,13,0.625,0.38461538461538464,0.4761904761904762
+114,'bdsm',3,115,1.0,0.2,0.33333333333333337
+115,'What are some popular movies with the theme of beauty or featuring beautiful characters or settings?',5,424,0.0,0.0,0.0
+116,'What are some movies known for their stunning visuals and beautiful scenery?',11,1268,0.6363636363636364,0.3684210526315789,0.4666666666666667
+117,'beautifully filmed movies',5,1283,0.4,0.14285714285714285,0.21052631578947364
+118,'What are some popular movies related to beauty pageants?',5,20,0.6,0.2,0.3
+119,'What are some movies related to the theme of beer?',7,100,0.2857142857142857,0.14285714285714285,0.19047619047619047
+120,'What are some popular movies related to the theme of Berlin?',5,56,0.2,0.07692307692307693,0.1111111111111111
+121,'What are some of the best movies from 2005?',5,64,0.6,0.2,0.3
+122,'best war films',5,294,0.8,0.25,0.38095238095238093
+123,'What are some movies that involve betrayal as a central theme?',6,2099,0.3333333333333333,0.14285714285714285,0.2
+124,'What movies are considered better than expected by the audience?',5,835,0.2,0.07692307692307693,0.1111111111111111
+125,'better than the american version',0,40,0.0,0.0,0.0
+126,'What are some popular biblical movies that have been adapted from the Bible or have strong religious themes?',6,103,0.3333333333333333,0.14285714285714285,0.2
+127,'What are some popular movies with a big budget?',5,1011,0.6,0.2,0.3
+128,'What are some popular biographical movies?',5,604,0.8,0.25,0.38095238095238093
+129,'What are some popular biographical movies that focus on the lives of famous individuals?',5,415,0.6,0.2,0.3
+130,'What are some popular biopics that depict the lives of famous individuals?',5,453,0.4,0.14285714285714285,0.21052631578947364
+131,'What are some popular movies featuring birds as main characters or significant elements?',6,21,0.3333333333333333,0.14285714285714285,0.2
+132,'What are some movies with the theme of 'biting'?',5,144,0.0,0.0,0.0
+133,'bittersweet',5,1097,0.8,0.25,0.38095238095238093
+134,'What are some bizarre movie examples that you can think of?',5,294,0.8,0.25,0.38095238095238093
+135,'Black and White Movies',5,830,0.4,0.14285714285714285,0.21052631578947364
+136,'black comedy',5,447,0.4,0.14285714285714285,0.21052631578947364
+137,'blaxploitation',5,40,0.8,0.25,0.38095238095238093
+138,'What are some examples of movies with a bleak theme or atmosphere?',5,1685,0.4,0.14285714285714285,0.21052631578947364
+139,'What are some movies related to the theme of blindness?',5,93,1.0,0.29411764705882354,0.45454545454545453
+140,'What are some popular movies related to the theme of blood?',5,863,0.6,0.2,0.3
+141,'What are some popular movies with the theme of violence or gore?',7,790,0.42857142857142855,0.2,0.27272727272727276
+142,'boarding school',4,70,0.25,0.07692307692307693,0.11764705882352941
+143,'What are some popular movies related to the theme of boats or boat adventures?',6,90,0.16666666666666666,0.07692307692307693,0.10526315789473684
+144,'What are some popular Bollywood movies?',5,487,1.0,0.29411764705882354,0.45454545454545453
+145,'What are some movies related to the theme of bombs?',5,162,0.4,0.14285714285714285,0.21052631578947364
+146,'What are some popular movies related to the 'Bond' franchise?',5,52,0.6,0.2,0.3
+147,'What are some popular movies adapted from books?',10,390,0.3,0.2,0.24
+148,'book was better',5,314,0.2,0.07692307692307693,0.1111111111111111
+149,'What are some popular movies adapted from books?',9,673,0.4444444444444444,0.25,0.32
+150,'What are some examples of movies that have been described as boring?',5,26,0.0,0.0,0.0
+151,'boring!',0,89,0.0,0.0,0.0
+152,'What are some popular movies set in Boston or featuring Boston-related themes?',5,92,0.6,0.2,0.3
+153,'What are some movies related to the theme of bowling?',5,9,0.2,0.1111111111111111,0.14285714285714285
+154,'What are some popular movies related to the theme of boxing?',5,49,0.8,0.25,0.38095238095238093
+155,'What are some movies that involve brainwashing as a central theme or plot?',6,215,0.16666666666666666,0.07692307692307693,0.10526315789473684
+156,'What is a movie related to the theme of Brazil?',5,31,0.2,0.07692307692307693,0.1111111111111111
+157,'What are some breathtaking movies that have left a lasting impression on viewers?',7,1151,0.42857142857142855,0.2,0.27272727272727276
+158,'What are some brilliant movies that have received critical acclaim and left a lasting impression on the audience?',7,4,0.0,0.0,0.0
+159,'What are some popular British movies?',8,730,0.75,0.3333333333333333,0.46153846153846156
+160,'What are some popular British comedy movies?',10,180,0.8,0.4,0.5333333333333333
+161,'What are some popular movies related to Broadway?',5,137,0.4,0.14285714285714285,0.21052631578947364
+162,'What are some popular movies featuring the theme of brotherhood or relationships between siblings?',5,270,0.4,0.14285714285714285,0.21052631578947364
+163,'brutal',0,749,0.0,0.0,0.0
+164,'What are some movies that depict or involve brutality?',5,2893,0.6,0.2,0.3
+165,'What are some popular buddy movie examples?',5,266,0.6,0.2,0.3
+166,'bullshit history',5,18,0.4,0.14285714285714285,0.21052631578947364
+167,'What are some movies that depict or address the theme of bullying?',5,394,0.8,0.25,0.38095238095238093
+168,'What are some popular movies that involve business themes or have significant business aspects?',6,201,0.5,0.2,0.28571428571428575
+169,'Can you suggest a movie adaptation of C.S. Lewis's works?',5,6,0.0,0.0,0.0
+170,'What are some popular movies set in California?',6,587,0.0,0.0,0.0
+171,'What are some popular movies related to the theme of 'camp'?',5,631,0.6,0.2,0.3
+172,'Campy movies',5,256,0.8,0.25,0.38095238095238093
+173,'Canada-related movies',5,92,0.2,0.07692307692307693,0.1111111111111111
+174,'Can you recommend any movies that deal with the theme of cancer?',5,276,0.8,0.25,0.38095238095238093
+175,'can you recommend any movie related to the theme of cannibalism?',5,119,0.4,0.14285714285714285,0.21052631578947364
+176,'What are some movies that explore the theme of capitalism?',5,222,0.6,0.2,0.3
+177,'car chase',5,360,0.4,0.14285714285714285,0.21052631578947364
+178,'What are some movies featuring Carrie-Anne Moss?',5,7,0.4,0.2857142857142857,0.3333333333333333
+179,'What are some popular movies related to the theme of cars?',5,160,0.6,0.2,0.3
+180,'What are some popular cartoon movies?',10,425,0.9,0.42857142857142855,0.5806451612903225
+181,'What are some popular movies related to the theme of casinos?',5,71,0.8,0.25,0.38095238095238093
+182,'What are some movie examples related to the theme of catastrophe?',5,3462,0.8,0.25,0.38095238095238093
+183,'Can you recommend a cathartic movie that helps in emotional healing?',4,170,0.25,0.07692307692307693,0.11764705882352941
+184,'Can you suggest a movie that has a significant theme related to Catholicism?',3,148,0.3333333333333333,0.07692307692307693,0.125
+185,'What are some movies that have dealt with or been affected by the issue of censorship?',5,397,0.0,0.0,0.0
+186,'Can you recommend any cerebral movies that focus on thought-provoking themes and intellectual storylines?',9,1829,0.6666666666666666,0.3333333333333333,0.4444444444444444
+187,'What are some popular movies that extensively used CGI technology?',5,333,0.4,0.14285714285714285,0.21052631578947364
+188,'Character study',4,1207,0.5,0.14285714285714285,0.22222222222222224
+189,'What are some popular movies that involve a chase scene?',5,3941,0.4,0.14285714285714285,0.21052631578947364
+190,'What are some popular movies related to cheerleading?',5,165,0.6,0.2,0.3
+191,'Can you recommend a cheesy movie for a light-hearted movie night?',2,169,0.0,0.0,0.0
+192,'What are some popular movies related to the theme of chess?',5,27,0.6,0.2,0.3
+193,'What is a famous movie related to the theme of Chicago?',3,26,0.6666666666666666,0.14285714285714285,0.23529411764705882
+194,'chick flick',5,643,0.6,0.2,0.3
+195,'What are some movies that address the issue of child abuse?',5,91,0.4,0.14285714285714285,0.21052631578947364
+196,'What are some popular movies that depict childhood experiences or themes?',5,1561,0.6,0.2,0.3
+197,'What are some popular children's movies that have entertained generations?',7,853,0.42857142857142855,0.2,0.27272727272727276
+198,'What are some popular Chinese movies or films that have gained international recognition?',6,139,0.0,0.0,0.0
+199,'What are some popular movies related to the theme of chocolate?',7,22,0.2857142857142857,0.14285714285714285,0.19047619047619047
+200,'What are some popular movies starring Chris Tucker?',4,10,0.5,0.2,0.28571428571428575
+201,'What are some popular movies related to the Christian theme or featuring Christian characters?',5,130,0.2,0.07692307692307693,0.1111111111111111
+202,'What are some popular movies related to Christianity?',5,121,0.2,0.07692307692307693,0.1111111111111111
+203,'What are some popular Christmas-themed movies?',5,102,0.6,0.2,0.3
+204,'What are some popular movies related to the CIA?',5,84,0.8,0.25,0.38095238095238093
+205,'What are some movies known for their exceptional cinematography?',6,3038,0.5,0.2,0.28571428571428575
+206,'What are some popular movies related to the circus theme?',5,15,0.2,0.07692307692307693,0.1111111111111111
+207,'What are some popular movies related to the theme of civil war?',5,260,1.0,0.29411764705882354,0.45454545454545453
+208,'What are some classic movies that have left a lasting impact on the film industry?',5,1139,0.6,0.2,0.3
+209,'What are some classic car movies that feature prominently the role of a vintage automobile?',5,367,0.6,0.2,0.3
+210,'What are some movies that feature classical music prominently in their soundtracks or storylines?',5,63,0.6,0.2,0.3
+211,'What are some examples of movies with claustrophobic themes or settings?',5,720,0.8,0.25,0.38095238095238093
+212,'Claymation movies',5,19,0.6,0.2,0.3
+213,'What are some clever movies that have unique plot twists and intelligent characters?',5,1938,0.4,0.14285714285714285,0.21052631578947364
+214,'Can you recommend a movie featuring clones as a central theme?',4,228,0.25,0.07692307692307693,0.11764705882352941
+215,'Can you recommend a movie that involves cloning as a significant theme?',3,146,0.6666666666666666,0.14285714285714285,0.23529411764705882
+216,'What are some popular movies featuring clowns as main characters or significant roles?',5,33,0.2,0.07692307692307693,0.1111111111111111
+217,'coen bros',5,117,0.8,0.25,0.38095238095238093
+218,'coen brothers',6,20,0.8333333333333334,0.29411764705882354,0.4347826086956522
+219,'What are some popular movies related to the Cold War theme?',5,172,0.6,0.2,0.3
+220,'What are some popular movies related to the college theme?',6,176,0.6666666666666666,0.25,0.36363636363636365
+221,'What are some movies that address the theme of colonialism?',5,40,0.2,0.07692307692307693,0.1111111111111111
+222,'colourful',5,458,0.2,0.07692307692307693,0.1111111111111111
+223,'What are some popular comedy movies?',8,2444,0.75,0.3333333333333333,0.46153846153846156
+224,'What are some popular movies related to the comic genre?',5,90,0.6,0.2,0.3
+225,'What are some popular movies based on comic books?',10,177,0.8,0.4,0.5333333333333333
+226,'comic book adaption',10,84,0.3,0.2,0.24
+227,'What are some popular movies based on comics or adapted from comic books?',18,151,0.3888888888888889,0.3684210526315789,0.37837837837837834
+228,'What are some popular movies that represent the coming of age theme?',6,767,0.6666666666666666,0.25,0.36363636363636365
+229,'What are some popular coming-of-age movies?',5,498,0.6,0.2,0.3
+230,'What are some movies related to the theme of communism?',5,65,0.2,0.07692307692307693,0.1111111111111111
+231,'What are some movies that portray compassionate characters or themes?',5,471,0.4,0.14285714285714285,0.21052631578947364
+232,'What are some popular movies that involve competition or have a competitive theme?',5,77,0.0,0.0,0.0
+233,'What are some movies with complex storylines or characters?',5,2161,0.6,0.2,0.3
+234,'What are some movies with complex characters that have gained significant attention?',5,260,0.6,0.2,0.3
+235,'What are some examples of complicated movies that have intricate plots and storylines?',6,673,1.0,0.3333333333333333,0.5
+236,'complicated plot',5,332,0.8,0.25,0.38095238095238093
+237,'What are some popular computer animation movies?',7,476,0.8571428571428571,0.3333333333333333,0.48
+238,'What are some popular movies related to the theme of computer games?',6,149,0.6666666666666666,0.25,0.36363636363636365
+239,'What are some popular movies related to the theme of computers or technology?',6,64,0.6666666666666666,0.25,0.36363636363636365
+240,'What are some popular movies featuring con artists as the main characters?',5,91,0.6,0.2,0.3
+241,'What are some popular movies featuring con men as main characters?',5,83,0.6,0.2,0.3
+242,'confrontational',4,61,0.0,0.0,0.0
+243,'Can you recommend a movie that has a confusing plot or ending?',5,272,0.8,0.25,0.38095238095238093
+244,'conspiracy',0,756,0.0,0.0,0.0
+245,'conspiracy theory',5,162,0.2,0.07692307692307693,0.1111111111111111
+246,'What are some controversial movies that have sparked debates and discussions?',5,399,0.2,0.07692307692307693,0.1111111111111111
+247,'What are some popular movies related to cooking?',5,32,1.0,0.29411764705882354,0.45454545454545453
+248,'What are some cool movies that you would recommend?',5,874,0.4,0.14285714285714285,0.21052631578947364
+249,'What are some examples of movies with a corny theme or plot?',5,33,0.0,0.0,0.0
+250,'What are some movies related to the theme of corporate America?',8,119,0.5,0.25,0.3333333333333333
+251,'corruption',5,2357,0.8,0.25,0.38095238095238093
+252,'What are some popular costume dramas that feature elaborate costumes and settings?',10,330,0.5,0.29411764705882354,0.37037037037037035
+253,'What are some movies that showcase the theme of courage?',5,724,0.4,0.14285714285714285,0.21052631578947364
+254,'What are some popular movies related to the theme of court or legal system?',6,148,0.6666666666666666,0.25,0.36363636363636365
+255,'courtroom',5,161,0.6,0.2,0.3
+256,'courtroom drama',5,59,0.4,0.14285714285714285,0.21052631578947364
+257,'crappy sequel',5,307,0.2,0.07692307692307693,0.1111111111111111
+258,'What are some popular movies with the theme of insanity or craziness?',5,123,0.6,0.2,0.3
+259,'What are some movies that showcase creativity in their storytelling or production?',5,1193,0.6,0.2,0.3
+260,'Creepy movies',5,1094,0.4,0.14285714285714285,0.21052631578947364
+261,'crime',5,1287,0.4,0.14285714285714285,0.21052631578947364
+262,'crime gone awry',5,840,0.8,0.25,0.38095238095238093
+263,'What are some popular movies under the Criterion Collection?',7,3362,0.42857142857142855,0.2,0.27272727272727276
+264,'Cross dressing in movies',6,113,0.5,0.2,0.28571428571428575
+265,'What are some movies with crude humor that you would recommend?',5,615,0.8,0.25,0.38095238095238093
+266,'What are some popular movies related to Cuba?',5,34,0.6,0.2,0.3
+267,'What are some popular movies considered as cult classics?',5,414,0.6,0.2,0.3
+268,'cult classic',5,1427,0.4,0.14285714285714285,0.21052631578947364
+269,'cult film',5,1344,0.6,0.2,0.3
+270,'What are some movies that depict or explore the theme of culture clash?',5,2591,0.6,0.2,0.3
+271,'What are some examples of cute movies?',5,558,0.4,0.14285714285714285,0.21052631578947364
+272,'Cyberpunk',3,144,0.6666666666666666,0.14285714285714285,0.23529411764705882
+273,'What are some popular movies featuring cyborgs as characters?',5,82,0.2,0.07692307692307693,0.1111111111111111
+274,'What are some cynical movies that depict a pessimistic view of life?',5,577,0.6,0.2,0.3
+275,'What are some popular movies related to the theme of dance?',7,215,0.7142857142857143,0.29411764705882354,0.4166666666666667
+276,'What are some popular movies that involve dancing as a significant aspect?',5,219,1.0,0.29411764705882354,0.45454545454545453
+277,'What are some popular movies with a dark theme or atmosphere?',5,1238,0.0,0.0,0.0
+278,'dark comedy',5,400,0.6,0.2,0.3
+279,'What are some popular dark fantasy movies?',5,259,0.2,0.07692307692307693,0.1111111111111111
+280,'What are some dark hero movies that feature a protagonist with a complex moral journey?',5,268,0.2,0.07692307692307693,0.1111111111111111
+281,'What are some popular movies with dark humor elements?',8,1105,0.75,0.3333333333333333,0.46153846153846156
+282,'dc comics',5,53,0.8,0.25,0.38095238095238093
+283,'What are some examples of movies featuring deadpan humor or actors known for their deadpan performances?',5,132,0.2,0.07692307692307693,0.1111111111111111
+284,'What are some popular movies with the theme of death or related to it?',5,1879,0.0,0.0,0.0
+285,'What are some movies related to the theme of the death penalty?',5,95,0.4,0.14285714285714285,0.21052631578947364
+286,'What are some popular movies related to the theme of demons?',5,504,0.4,0.14285714285714285,0.21052631578947364
+287,'depp & burton',5,11,1.0,0.45454545454545453,0.625
+288,'depressing',5,490,0.8,0.25,0.38095238095238093
+289,'What are some movies that deal with the theme of depression?',5,1417,1.0,0.29411764705882354,0.45454545454545453
+290,'What are some movies related to the theme of destiny?',5,2171,0.6,0.2,0.3
+291,'What are some popular detective movies?',6,543,0.5,0.2,0.28571428571428575
+292,'What are some popular movies related to the theme of the devil or featuring devil characters?',5,203,0.8,0.25,0.38095238095238093
+293,'What are some famous movies known for their memorable dialogue?',11,4174,0.6363636363636364,0.3684210526315789,0.4666666666666667
+294,'dialogue driven',3,222,0.3333333333333333,0.07692307692307693,0.125
+295,'What are some popular movies featuring dinosaurs?',9,104,0.6666666666666666,0.3333333333333333,0.4444444444444444
+296,'Discuss a movie that features a character with a disability and how it portrays their experience.',4,165,0.75,0.2,0.31578947368421056
+297,'Disaster movies',5,190,0.8,0.25,0.38095238095238093
+298,'What are some popular Disney movies?',7,242,0.5714285714285714,0.25,0.34782608695652173
+299,'What are some popular Disney animated feature movies?',6,87,0.6666666666666666,0.25,0.36363636363636365
+300,'What are some examples of dystopian movies?',5,376,0.4,0.14285714285714285,0.21052631578947364
+301,'What are some disturbing movies that have left a lasting impact on viewers?',5,1125,0.2,0.07692307692307693,0.1111111111111111
+302,'What are some movies related to the theme of divorce?',5,390,0.2,0.07692307692307693,0.1111111111111111
+303,'What are some popular movies featuring doctors as main characters or significant roles?',7,474,0.5714285714285714,0.25,0.34782608695652173
+304,'What are some popular documentary movies?',5,552,0.6,0.2,0.3
+305,'What are some popular movies featuring dogs as main characters or important roles?',6,171,0.8333333333333334,0.29411764705882354,0.4347826086956522
+306,'What are some popular movies featuring dogs as main characters or significant roles?',6,94,0.8333333333333334,0.29411764705882354,0.4347826086956522
+307,'What are some popular movies featuring dolphins as main characters or significant roles?',5,12,0.4,0.16666666666666666,0.23529411764705882
+308,'downbeat',4,1398,0.25,0.07692307692307693,0.11764705882352941
+309,'What are some popular movies based on Dr. Seuss's works?',4,6,0.25,0.16666666666666666,0.2
+310,'What are some popular movies related to the theme of dragons?',5,28,0.8,0.25,0.38095238095238093
+311,'What are some popular movies featuring dragons as main characters or significant elements?',5,129,0.8,0.25,0.38095238095238093
+312,'What are some popular drama movies?',11,3826,0.45454545454545453,0.29411764705882354,0.35714285714285715
+313,'What are some popular dramatic movies that have received critical acclaim?',11,2164,0.45454545454545453,0.29411764705882354,0.35714285714285715
+314,'What are some dreamlike movies that can evoke a surreal and imaginative experience?',5,585,0.6,0.2,0.3
+315,'What are some popular movies that involve dreams or dream-like scenarios?',5,524,0.6,0.2,0.3
+316,'What are some popular movies produced by DreamWorks Animation?',5,20,0.8,0.25,0.38095238095238093
+317,'What are some popular movies that involve the theme of drinking?',10,1921,0.8,0.4,0.5333333333333333
+318,'What are some movies that deal with the theme of drug abuse?',5,297,1.0,0.29411764705882354,0.45454545454545453
+319,'What are some movies that deal with the theme of drug addiction?',5,243,1.0,0.29411764705882354,0.45454545454545453
+320,'What are some movies that deal with the theme of drugs?',5,611,1.0,0.29411764705882354,0.45454545454545453
+321,'What are some examples of movies with a dumb or silly theme?',5,292,0.8,0.25,0.38095238095238093
+322,'dumb but funny',4,336,0.5,0.14285714285714285,0.22222222222222224
+323,'What are some examples of movies that feature dynamic CGI action?',6,425,0.5,0.2,0.28571428571428575
+324,'What are some movie examples that involve a dysfunctional family?',5,890,0.4,0.14285714285714285,0.21052631578947364
+325,'What are some popular dystopian movies?',7,303,0.5714285714285714,0.25,0.34782608695652173
+326,'dystopic future',5,289,0.6,0.2,0.3
+327,'What are some examples of movies with an earnest theme or featuring earnest characters?',5,712,0.6,0.2,0.3
+328,'easily confused with other movie(s) (title)',8,1,0.0,0.0,0.0
+329,'What are some notable movies related to East Germany?',5,30,0.2,0.07692307692307693,0.1111111111111111
+330,'What are some movies that showcase eccentric characters or have eccentric storylines?',6,517,0.3333333333333333,0.14285714285714285,0.2
+331,'What are some movies that have a significant focus on ecology and environmental themes?',6,44,0.16666666666666666,0.07692307692307693,0.10526315789473684
+332,'What are some educational movies that teach important lessons or convey knowledge?',5,99,0.2,0.07692307692307693,0.1111111111111111
+333,'What are some examples of eerie movies?',5,489,0.4,0.14285714285714285,0.21052631578947364
+334,'What are some popular movies known for their groundbreaking special effects?',5,353,0.6,0.2,0.3
+335,'What are some popular movies related to the theme of ancient Egypt?',7,84,0.2857142857142857,0.14285714285714285,0.19047619047619047
+336,'What are some movies featuring Emma Watson?',5,18,0.2,0.07692307692307693,0.1111111111111111
+337,'What are some emotional movies that can evoke strong feelings?',5,1067,0.8,0.25,0.38095238095238093
+338,'end of the world',5,428,0.6,0.2,0.3
+339,'What are some popular movies set in England?',8,538,0.625,0.29411764705882354,0.4
+340,'enigmatic',2,2536,1.0,0.14285714285714285,0.25
+341,'What is Ennio Morricone's contribution to the movie industry particularly in terms of his iconic film scores?',5,34,0.2,0.07692307692307693,0.1111111111111111
+342,'enormously long battle scene',5,128,0.4,0.14285714285714285,0.21052631578947364
+343,'What are some popular movies featuring an ensemble cast?',6,402,0.3333333333333333,0.14285714285714285,0.2
+344,'Entertaining movies',5,1151,0.6,0.2,0.3
+345,'What are some movies that are entirely dialogue-driven and focus on the characters' conversations?',8,612,0.75,0.3333333333333333,0.46153846153846156
+346,'What are some movies that have a strong focus on the environment or feature environmental themes?',7,133,0.2857142857142857,0.14285714285714285,0.19047619047619047
+347,'What are some popular movies with an environmental theme or focusing on ecological issues?',9,65,0.2222222222222222,0.14285714285714285,0.17391304347826086
+348,'What are some examples of epic movies?',5,316,0.8,0.25,0.38095238095238093
+349,'What are some popular erotic movies?',5,456,0.8,0.25,0.38095238095238093
+350,'What are some popular movies related to the espionage theme?',7,356,0.5714285714285714,0.25,0.34782608695652173
+351,'What are some movies that deal with ethnic conflict as a central theme?',5,254,0.2,0.07692307692307693,0.1111111111111111
+352,'What are some popular movies that involve the theme of evolution?',9,9,0.3333333333333333,0.3333333333333333,0.3333333333333333
+353,'What are some excellent movies that you would recommend?',7,665,0.2857142857142857,0.14285714285714285,0.19047619047619047
+354,'What are some movies known for having excellent script?',5,1520,0.4,0.14285714285714285,0.21052631578947364
+355,'What are some movies known for their exceptional acting?',5,680,0.6,0.2,0.3
+356,'What are some exciting movies that you would recommend?',5,349,0.8,0.25,0.38095238095238093
+357,'What are some movies that explore existential themes or are related to the concept of existentialism?',6,1421,0.6666666666666666,0.25,0.36363636363636365
+358,'What are some popular movies featuring explosive scenes or actions?',7,249,0.14285714285714285,0.07692307692307693,0.1
+359,'What are some factual movies that focus on true events or stories?',5,453,0.8,0.25,0.38095238095238093
+360,'fairy tale',5,422,0.6,0.2,0.3
+361,'What are some popular movies based on fairy tales?',5,130,0.8,0.25,0.38095238095238093
+362,'fake documentary',5,91,0.8,0.25,0.38095238095238093
+363,'What are some popular family-friendly movies?',7,2373,0.7142857142857143,0.29411764705882354,0.4166666666666667
+364,'What are some movies that focus on family bonds and relationships?',6,219,0.3333333333333333,0.14285714285714285,0.2
+365,'family drama',5,745,0.6,0.2,0.3
+366,'What are some popular fantasy movies?',5,844,0.2,0.07692307692307693,0.1111111111111111
+367,'fantasy world',5,1261,0.4,0.14285714285714285,0.21052631578947364
+368,'What are some popular movies that can be classified as farces?',5,476,0.2,0.07692307692307693,0.1111111111111111
+369,'What are some movies related to the theme of fascism?',5,226,0.2,0.07692307692307693,0.1111111111111111
+370,'What are some popular movies related to the fashion industry?',5,91,0.2,0.07692307692307693,0.1111111111111111
+371,'fast paced',5,1108,1.0,0.29411764705882354,0.45454545454545453
+372,'What are some movies that depict a strong father-daughter relationship?',5,173,0.2,0.07692307692307693,0.1111111111111111
+373,'What are some movies that explore the father-son relationship dynamic?',6,173,0.3333333333333333,0.14285714285714285,0.2
+374,'What are some movies that explore the father-son relationship dynamic?',5,66,0.4,0.14285714285714285,0.21052631578947364
+375,'What are some popular movies related to the FBI or featuring FBI agents?',5,99,0.2,0.07692307692307693,0.1111111111111111
+376,'feel good movie',4,899,0.5,0.14285714285714285,0.22222222222222224
+377,'What are some feel-good movies that can lift your spirits and bring happiness?',5,1657,0.2,0.07692307692307693,0.1111111111111111
+378,'fight scenes',5,1558,0.4,0.14285714285714285,0.21052631578947364
+379,'What are some popular movies that involve fighting as a central theme?',6,621,0.5,0.2,0.28571428571428575
+380,'fighting the system',5,261,0.2,0.07692307692307693,0.1111111111111111
+381,'What are some movies related to figure skating?',5,5,0.4,0.4,0.4000000000000001
+382,'What are some popular film noir movies?',5,334,0.6,0.2,0.3
+383,'What are some Finnish movies or films that you can recommend?',5,182,0.4,0.14285714285714285,0.21052631578947364
+384,'What movie is related to the tag 'firefly'?',2,66,0.0,0.0,0.0
+385,'What are some popular movies related to the theme of first contact?',5,520,0.8,0.25,0.38095238095238093
+386,'What are some popular movies related to the theme of fish?',8,45,0.375,0.2,0.26086956521739135
+387,'flashbacks',0,66,0.0,0.0,0.0
+388,'What are some popular movies that have food as a central theme or feature prominently?',5,36,0.6,0.2,0.3
+389,'Football-related movies',5,63,0.8,0.25,0.38095238095238093
+390,'Forceful movies',6,1185,0.3333333333333333,0.14285714285714285,0.2
+391,'What are some popular foreign movies that have gained significant recognition and appreciation?',5,1111,0.2,0.07692307692307693,0.1111111111111111
+392,'What are some movies known for their use of foul language?',6,425,0.5,0.2,0.28571428571428575
+393,'What are some movies related to the theme of the Fountain of Youth?',5,28,0.4,0.14285714285714285,0.21052631578947364
+394,'What are some popular French movies?',5,426,0.0,0.0,0.0
+395,'What are some popular movie franchises?',5,1001,0.0,0.0,0.0
+396,'What are some movies directed by Francis Ford Coppola?',7,43,0.14285714285714285,0.07692307692307693,0.1
+397,'What are some movies that deal with the theme of free speech?',5,57,0.0,0.0,0.0
+398,'What are some free to download movies related to the tag 'free to download'?',7,115,0.0,0.0,0.0
+399,'What are some popular movies that revolve around the theme of freedom?',5,101,0.4,0.14285714285714285,0.21052631578947364
+400,'What are some popular French movies that have gained international recognition?',5,405,0.0,0.0,0.0
+401,'What are some popular movies that depict strong friendships?',5,1563,0.6,0.2,0.3
+402,'What are some frightening movies that you would recommend?',5,168,0.0,0.0,0.0
+403,'What are some fun movies that people usually enjoy watching?',6,997,0.6666666666666666,0.25,0.36363636363636365
+404,'fun movie',3,2620,0.3333333333333333,0.07692307692307693,0.125
+405,'funniest movies',5,315,0.6,0.2,0.3
+406,'What are some funny movies that you would recommend?',5,1533,0.8,0.25,0.38095238095238093
+407,'funny as hell',0,378,0.0,0.0,0.0
+408,'What are some popular movies set in the future or involving futuristic themes?',5,491,0.2,0.07692307692307693,0.1111111111111111
+409,'What are some popular futuristic movies?',5,598,0.4,0.14285714285714285,0.21052631578947364
+410,'What are some popular movies related to gambling?',5,78,0.6,0.2,0.3
+411,'What are some popular movies related to the theme of gangs?',5,313,0.0,0.0,0.0
+412,'What are some popular movies related to the gangster theme?',5,661,0.6,0.2,0.3
+413,'What are some popular movies related to the theme of gangsters?',5,1224,0.6,0.2,0.3
+414,'What are some popular movies with significant LGBTQ+ representation or themes?',6,377,0.8333333333333334,0.29411764705882354,0.4347826086956522
+415,'What are some movies featuring a prominent gay character?',5,394,0.8,0.25,0.38095238095238093
+416,'What are some popular movies related to the geek culture or featuring geek characters?',7,151,0.14285714285714285,0.07692307692307693,0.1
+417,'What are some popular movies featuring geek characters or related to geek culture?',7,188,0.14285714285714285,0.07692307692307693,0.1
+418,'What are some popular movies related to the theme of genetics?',5,78,0.4,0.14285714285714285,0.21052631578947364
+419,'What are some movies featuring individuals with exceptional intelligence or creative genius?',6,49,0.5,0.2,0.28571428571428575
+420,'What are some movies that deal with the theme of genocide?',5,230,0.6,0.2,0.3
+421,'What are some movies related to the work of George Orwell?',5,19,0.2,0.07692307692307693,0.1111111111111111
+422,'What are some popular German movies?',5,314,0.2,0.07692307692307693,0.1111111111111111
+423,'What are some popular German movies or films that have gained significant recognition?',5,307,0.0,0.0,0.0
+424,'What are some popular movies related to the theme of ghosts?',5,255,0.2,0.07692307692307693,0.1111111111111111
+425,'What are some popular movies related to the themes of ghosts and afterlife?',5,94,0.2,0.07692307692307693,0.1111111111111111
+426,'What are some popular movies featuring giant robots?',5,118,0.6,0.2,0.3
+427,'What are some movies directed by Terry Gilliam?',5,22,0.6,0.2,0.3
+428,'girlie movie',5,1073,0.8,0.25,0.38095238095238093
+429,'Can you recommend a few popular movies that represent or celebrate the LGBTQ+ community?',5,163,0.2,0.07692307692307693,0.1111111111111111
+430,'What are some movies that address the issue of global warming?',5,50,0.2,0.07692307692307693,0.1111111111111111
+431,'What are some popular movies related to the theme of God or spirituality?',5,309,0.6,0.2,0.3
+432,'golden palm',3,1813,0.6666666666666666,0.14285714285714285,0.23529411764705882
+433,'What are some popular movies related to the sport of golf?',5,34,0.6,0.2,0.3
+434,'What are some good movies that people generally enjoy?',17,3881,0.23529411764705882,0.25,0.24242424242424243
+435,'good acting',5,1488,0.4,0.14285714285714285,0.21052631578947364
+436,'good action',4,1350,0.75,0.2,0.31578947368421056
+437,'What are some movies known for their good dialogue?',6,129,0.3333333333333333,0.14285714285714285,0.2
+438,'good music',0,494,0.0,0.0,0.0
+439,'good romantic comedies',5,203,0.8,0.25,0.38095238095238093
+440,'good sequel',3,378,0.3333333333333333,0.07692307692307693,0.125
+441,'good soundtrack',3,4213,1.0,0.2,0.33333333333333337
+442,'good story',0,67,0.0,0.0,0.0
+443,'good versus evil',4,324,0.0,0.0,0.0
+444,'What are some popular movies featuring the character Goofy?',6,1097,0.0,0.0,0.0
+445,'What are some popular movies with a significant amount of gore or violence?',7,338,0.2857142857142857,0.14285714285714285,0.19047619047619047
+446,'goretastic',3,165,0.3333333333333333,0.07692307692307693,0.125
+447,'What are some examples of gory movies?',5,846,0.4,0.14285714285714285,0.21052631578947364
+448,'What are some popular goth-related movies?',6,227,0.5,0.2,0.28571428571428575
+449,'What are some popular gothic movies?',6,215,0.5,0.2,0.28571428571428575
+450,'What are some movies related to graphic design?',5,85,0.4,0.14285714285714285,0.21052631578947364
+451,'What are some popular movies based on graphic novels?',8,306,0.625,0.29411764705882354,0.4
+452,'What are some movies that feature gratuitous violence?',5,379,0.6,0.2,0.3
+453,'What are some popular movies considered as great in the film industry?',7,3346,0.5714285714285714,0.25,0.34782608695652173
+454,'What are some movies known for their great acting performances?',5,2621,0.6,0.2,0.3
+455,'What are some movies known for their great cinematography?',5,360,0.4,0.14285714285714285,0.21052631578947364
+456,'What are some movies known for their great dialogue?',5,251,0.6,0.2,0.3
+457,'What are some movies known for having great endings?',7,4646,0.2857142857142857,0.14285714285714285,0.19047619047619047
+458,'What are some great movie recommendations?',10,2241,0.4,0.25,0.3076923076923077
+459,'What are some movies known for having great music?',8,277,0.5,0.25,0.3333333333333333
+460,'What are some movies known for having a great soundtrack?',6,349,0.6666666666666666,0.25,0.36363636363636365
+461,'What are some movies related to the theme of greed?',5,3085,0.8,0.25,0.38095238095238093
+462,'What are some examples of movies with a grim or dark theme?',5,765,0.4,0.14285714285714285,0.21052631578947364
+463,'grindhouse',7,782,0.0,0.0,0.0
+464,'gritty',5,635,0.8,0.25,0.38095238095238093
+465,'What are some popular movies with a gross-out theme?',5,42,0.2,0.07692307692307693,0.1111111111111111
+466,'What are some examples of gruesome movies?',5,282,0.4,0.14285714285714285,0.21052631578947364
+467,'What are some movies that deal with the theme of guilt?',5,875,0.2,0.07692307692307693,0.1111111111111111
+468,'guilty pleasure',0,39,0.0,0.0,0.0
+469,'What are some movies related to the Gulf War?',5,40,0.6,0.2,0.3
+470,'What are some popular movies featuring gunfights as a significant aspect?',7,1474,0.5714285714285714,0.25,0.34782608695652173
+471,'What are some popular movies featuring prominently the use of guns?',5,254,0.8,0.25,0.38095238095238093
+472,'gypsy accent',3,15,0.0,0.0,0.0
+473,'What are some popular movies related to the theme of hackers?',6,35,0.8333333333333334,0.29411764705882354,0.4347826086956522
+474,'What are some popular movies that involve hacking as a significant aspect of the plot?',6,56,0.6666666666666666,0.25,0.36363636363636365
+475,'What are some popular movies related to the theme of Halloween?',5,73,0.4,0.14285714285714285,0.21052631578947364
+476,'hallucinatory',0,209,0.0,0.0,0.0
+477,'What are some movies that feature the use of a handycam or have a storyline related to the handycam?',5,56,0.4,0.14285714285714285,0.21052631578947364
+478,'What is a famous movie character associated with the tag 'Hannibal Lecter'?',1,5,0.0,0.0,0.0
+479,'What are some movies with a happy ending related to the theme of finding love and overcoming challenges?',5,1476,0.6,0.2,0.3
+480,'hard to watch',3,144,0.3333333333333333,0.07692307692307693,0.125
+481,'What is a popular movie series related to the Harry Potter tag?',5,14,0.2,0.07692307692307693,0.1111111111111111
+482,'Harsh',0,1978,0.0,0.0,0.0
+483,'What are some popular movies related to the haunted house theme?',5,200,0.4,0.14285714285714285,0.21052631578947364
+484,'What are some popular movies set in Hawaii?',8,48,0.75,0.3333333333333333,0.46153846153846156
+485,'Can you recommend a heartbreaking movie that has left a deep emotional impact on viewers?',4,777,0.25,0.07692307692307693,0.11764705882352941
+486,'Can you recommend a heartwarming movie that can bring joy and positivity?',5,654,0.6,0.2,0.3
+487,'heist',5,338,0.6,0.2,0.3
+488,'What are some movies related to the theme of heroin addiction?',5,61,0.8,0.25,0.38095238095238093
+489,'What are some popular movies featuring a strong female protagonist or heroine character?',7,21,0.0,0.0,0.0
+490,'heroine in tight suit',5,20,0.2,0.07692307692307693,0.1111111111111111
+491,'What are some popular high fantasy movies?',6,194,0.16666666666666666,0.07692307692307693,0.10526315789473684
+492,'What are some popular movies related to the high school theme?',10,517,0.9,0.42857142857142855,0.5806451612903225
+493,'What are some highly quotable movies?',6,927,0.5,0.2,0.28571428571428575
+494,'What are some hilarious movies that you would recommend?',5,874,0.8,0.25,0.38095238095238093
+495,'What are some hilarious movies that you would recommend?',5,28,0.0,0.0,0.0
+496,'What are some popular movies related to hip hop culture?',5,381,1.0,0.29411764705882354,0.45454545454545453
+497,'What are some popular historical movies that have made a significant impact on the film industry?',6,637,0.6666666666666666,0.25,0.36363636363636365
+498,'What are some popular movies that have a significant historical context or are based on true events?',6,587,0.8333333333333334,0.29411764705882354,0.4347826086956522
+499,'What are some movies featuring hit men as main characters or significant roles?',6,431,0.3333333333333333,0.14285714285714285,0.2
+500,'What are some popular movies directed by Alfred Hitchcock?',5,162,0.8,0.25,0.38095238095238093
+501,'What movie franchise is associated with the hitman character?',2,641,1.0,0.14285714285714285,0.25
+502,'What are some popular Hollywood movies?',8,52,0.0,0.0,0.0
+503,'holocaust',5,118,0.4,0.14285714285714285,0.21052631578947364
+504,'What are some movies related to the theme of homelessness?',5,186,0.2,0.07692307692307693,0.1111111111111111
+505,'What are some movies that address or portray the theme of homophobia?',5,154,0.6,0.2,0.3
+506,'What are some movies with themes or characters that represent honesty?',5,1059,0.2,0.07692307692307693,0.1111111111111111
+507,'What are some popular Hong Kong movies?',5,164,0.2,0.07692307692307693,0.1111111111111111
+508,'What are some examples of movies with a horrible theme or plot?',5,658,0.8,0.25,0.38095238095238093
+509,'What are some popular horror movies?',8,1160,0.5,0.25,0.3333333333333333
+510,'What are some popular movies featuring horses as a significant element?',5,81,0.8,0.25,0.38095238095238093
+511,'What are some popular movies related to the theme of hospitals or medical settings?',6,518,0.5,0.2,0.28571428571428575
+512,'hostage',4,108,0.75,0.2,0.31578947368421056
+513,'What are some popular movies related to the theme of a hotel?',5,507,0.2,0.07692307692307693,0.1111111111111111
+514,'What are some movies that explore the theme of humanity and its impact on society?',5,356,0.4,0.14285714285714285,0.21052631578947364
+515,'What are some popular movies with a strong sense of humor?',5,665,0.8,0.25,0.38095238095238093
+516,'What are some humorous movies that you can recommend?',5,1194,0.8,0.25,0.38095238095238093
+517,'What are some popular movies related to the theme of hunting?',5,148,0.0,0.0,0.0
+518,'What are some movies that portray or explore the theme of idealism?',5,1021,0.4,0.14285714285714285,0.21052631578947364
+519,'What are some popular movies that explore the theme of identity?',5,469,0.6,0.2,0.3

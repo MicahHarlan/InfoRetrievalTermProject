@@ -1,0 +1,592 @@
+,Prompt,isResponseFormatted
+0,'What are some movies that explore the theme of humanity and its impact on society?',1
+1,'What are some popular movies with a strong sense of humor?',1
+2,'What are some humorous movies that you can recommend?',1
+3,'What are some popular movies related to the theme of hunting?',1
+4,'What are some movies that portray or explore the theme of idealism?',1
+5,'What are some popular movies that explore the theme of identity?',1
+6,'What are some examples of movies with an idiotic theme or plot?',1
+7,'Imaginary Friend',1
+8,'Imagination in movies',1
+9,'What are the top 250 movies on IMDb and can you provide some examples?',1
+10,'Immigrants in movies',1
+11,'What are some movies that explore the theme of immortality?',1
+12,'Incest in movies',1
+13,'What are some popular independent films that gained critical acclaim?',1
+14,'What are some popular Indian movies that have gained significant recognition and appreciation?',1
+15,'What is an example of a movie related to the Indiana Jones franchise?',1
+16,'What are some popular movies related to the theme of Indians?',1
+17,'What are some popular indie movies that have gained critical acclaim?',1
+18,'What are some movies that deal with the theme of infidelity?',1
+19,'Innocence Lost',1
+20,'What are some movies related to the theme of insanity?',1
+21,'Inspirational movies',1
+22,'What are some inspiring movies that have left a lasting impact on people?',1
+23,'Intellectual movies',1
+24,'What are some intelligent movies that showcase thought-provoking plots and characters?',1
+25,'What are some intelligent sci-fi movies that you would recommend?',1
+26,'intense',1
+27,'What are some interesting movies that you would recommend?',1
+28,'What are some popular movies that have a significant internet or technology-related theme?',1
+29,'Interracial romance movies',1
+30,'Can you suggest a few intimate movies that explore deep emotional connections between characters?',1
+31,'Investigation',1
+32,'What are some popular movies related to Iran or featuring Iranian characters or themes?',1
+33,'What are some popular movies related to the Iraq war or its aftermath?',1
+34,'What are some movies related to the Iraq War?',1
+35,'What are some popular movies related to Ireland?',1
+36,'Can you recommend any popular Irish movies?',1
+37,'What are some popular movies featuring actors with Irish accents?',1
+38,'Ironic movies',1
+39,'What are some examples of irreverent movies?',1
+40,'islam',1
+41,'Island-related movies',1
+42,'Isolation-themed movies',1
+43,'israel',1
+44,'Italian movies',1
+45,'Italy-related movies',1
+46,'What is a famous James Bond movie?',1
+47,'What are some popular movie adaptations of Jane Austen's novels?',1
+48,'What are some popular Japanese movies or filmmakers?',1
+49,'What are some popular Japanese movies?',1
+50,'What are some movies related to the characters Jay and Silent Bob?',1
+51,'What are some popular movies related to jazz?',1
+52,'What are some popular movies related to the theme of Jesus Christ?',1
+53,'What are some popular movies with Jewish themes or featuring Jewish characters?',1
+54,'What are some notable movies featuring Jewish characters or themes?',1
+55,'What are some popular movies related to the theme of journalism?',1
+56,'What are some movies related to Judaism?',1
+57,'What are some popular movies related to the jungle theme?',1
+58,'What are some popular movies related to the theme of justice?',1
+59,'kick-butt women',1
+60,'What are some popular movies related to the theme of kidnapping?',1
+61,'What are some popular kids' movies?',1
+62,'What are some popular movies suitable for kids and family?',1
+63,'king arthur',1
+64,'What are some notable movies directed by Stanley Kubrick?',1
+65,'What are some popular movies related to the kung fu genre?',1
+66,'What are some notable movies directed by Akira Kurosawa?',1
+67,'lame',1
+68,'What are some popular movies set in Las Vegas?',1
+69,'What are some popular movies related to Latin America?',1
+70,'What are some popular movies featuring lawyers as main characters or significant roles?',1
+71,'What are some popular movies featuring lawyers as main characters or significant roles?',1
+72,'What are some popular movies featuring lesbian characters or storylines?',1
+73,'What are some popular movies that revolve around the theme of life?',1
+74,'life & death',1
+75,'life philosophy',1
+76,'What are some popular movies related to the theme of light?',1
+77,'What are some popular movies featuring lions as characters or in the storyline?',1
+78,'What are some popular literary adaptations in the movie industry?',1
+79,'What are some popular movies adapted from literature?',1
+80,'What are some movies featuring Liv Tyler?',1
+81,'What are some popular movies set in London?',1
+82,'lone hero',1
+83,'Can you recommend a movie that portrays the theme of loneliness in a compelling way?',1
+84,'What are some examples of long movies that have captivated audiences?',1
+85,'What are some popular movies set in Los Angeles?',1
+86,'love story',1
+87,'love triangles',1
+88,'low budget movies',1
+89,'What are some movies directed by David Lynch?',1
+90,'Can you suggest a lyrical movie that has a captivating soundtrack and storyline?',1
+91,'What are some popular movies with a macabre theme?',1
+92,'What are some popular movies featuring a mad scientist character?',1
+93,'What are some popular movies made for TV?',1
+94,'What are some popular movies related to the mafia theme?',1
+95,'What are some popular movies related to the theme of magic?',1
+96,'What are some popular movies that fall under the genre of magic realism?',1
+97,'Male nudity in movies',1
+98,'What are some movies that involve a conflict between man and machine?',1
+99,'What are some movies that involve manipulation as a central theme or plot device?',1
+100,'What are some movies related to the theme of marijuana?',1
+101,'What are some popular movies that involve or revolve around the theme of marriage?',1
+102,'What are some popular movies related to Mars or set on the planet Mars?',1
+103,'What are some popular martial arts movies?',1
+104,'marvel',1
+105,'What are some popular movies featuring the Marx Brothers?',1
+106,'What are some examples of movies considered masterpieces in the film industry?',1
+107,'Can you recommend a movie that has a significant role of mathematics in its plot?',1
+108,'What are some movies related to mathematics?',1
+109,'What are some popular movies related to the theme of mazes or labyrinths?',1
+110,'What are some popular medieval-themed movies?',1
+111,'What are some meditative movies that focus on inner reflection and mindfulness?',1
+112,'Can you recommend a melancholic movie that evokes deep emotions and showcases a somber atmosphere?',1
+113,'What are some movies that depict or are related to the theme of melancholy?',1
+114,'What are some popular movies that involve the theme of memory or have a significant memory-related plot?',1
+115,'What are some movies that deal with the theme of memory loss?',1
+116,'mental hospital',1
+117,'What are some movies that deal with the theme of mental illness?',1
+118,'Can you recommend a movie where a character serves as a mentor to another character?',1
+119,'Can you recommend a movie that explores metaphysical themes?',1
+120,'What are some popular movies set in Mexico or featuring Mexican culture?',1
+121,'What are some popular movies related to the Middle East?',1
+122,'midlife crisis',1
+123,'What are some popular movies related to the military theme?',1
+124,'What are some mind-bending movies that can be considered as mindfucks?',1
+125,'What are some popular movies related to the mining industry or mining themes?',1
+126,'What are some movies related to the state of Minnesota?',1
+127,'What movie has a plot related to a mission from God?',1
+128,'What are some popular movies that involve a case of mistaken identity?',1
+129,'What are some popular movies directed by Hayao Miyazaki?',1
+130,'What are some popular movies related to the theme of 'mob'?',1
+131,'mockumentary',1
+132,'What are some popular modern fantasy movies?',1
+133,'What are some popular movies related to the theme of money?',1
+134,'What are some popular movies featuring monkeys as characters or main themes?',1
+135,'What are some popular movies related to the theme of monsters?',1
+136,'What are some popular movies featuring monsters as main characters or themes?',1
+137,'What are some popular movies related to Monty Python?',1
+138,'What are some moody movies that depict complex emotions and atmospheres?',1
+139,'What are some popular movies related to the theme of the moon?',1
+140,'What are some movie examples that explore the theme of moral ambiguity?',1
+141,'What are some movies that explore the theme of morality?',1
+142,'What are some movies that focus on the mother-daughter relationship?',1
+143,'What are some movies that focus on the mother-son relationship?',1
+144,'What are some popular movies featuring motorcycles as a significant element?',1
+145,'What are some popular movies related to mountain climbing?',1
+146,'What are some popular movies related to the movie business industry?',1
+147,'What are some popular movies from the Movielens top pick list?',1
+148,'What are some popular movies that involve the theme of moving or relocation?',1
+149,'What is a movie related to Mozart?',1
+150,'What are some popular movies related to the MTV tag?',1
+151,'What are some movies with multiple storylines?',1
+152,'What are some popular movies related to the theme of 'mummy'?',1
+153,'What are some popular movies featuring the Muppets?',1
+154,'What are some popular movies related to the theme of murder?',1
+155,'murder mystery',1
+156,'What are some popular movies that feature music as a significant aspect?',1
+157,'What are some popular movies related to the music business?',1
+158,'What are some popular musical movies that people enjoy?',1
+159,'What are some movies related to musicians?',1
+160,'What are some popular movies featuring mutants as main characters or significant roles?',1
+161,'What are some popular mystery movies that you can recommend?',1
+162,'What are some popular movies related to mythology?',1
+163,'Can you suggest a movie that has a narration or is narrated in a unique way?',1
+164,'What are some popular movies related to NASA or space exploration?',1
+165,'What are some movies that feature Native American characters or storylines?',1
+166,'What are some popular movies related to the theme of natural disasters?',1
+167,'What are some popular movies that involve or showcase nature in their storylines?',1
+168,'What are some movies related to the Nazi theme?',1
+169,'What are some movies related to the theme of Nazis?',1
+170,'What are some popular movies related to Neil Gaiman's works?',1
+171,'What are some movies related to the neo-nazis theme?',1
+172,'What are some popular neo-noir movies?',1
+173,'What are some popular movies featuring nerdy characters or storylines?',1
+174,'What are some movies related to New Jersey?',1
+175,'new orleans',1
+176,'What are some popular movies set in New York?',1
+177,'new york city',1
+178,'What are some popular movies set in New Zealand?',1
+179,'What are some popular movies featuring a ninja character or theme?',1
+180,'no dialogue',1
+181,'no plot',1
+182,'Can you suggest a movie related to the theme of 'nocturnal'?',1
+183,'noir',1
+184,'noir thriller',1
+185,'non-hollywood ending',1
+186,'Can you suggest a few non-linear movies that have received critical acclaim?',1
+187,'What are some examples of movies with nonlinear storytelling techniques?',1
+188,'What are some popular movies that evoke feelings of nostalgia?',1
+189,'What are some nostalgic movies that evoke a sense of longing for the past?',1
+190,'not as good as the first',1
+191,'notable nudity',1
+192,'notable soundtrack',1
+193,'What are some popular movies related to the theme of nuclear power or nuclear disasters?',1
+194,'What are some movies related to the theme of a nuclear bomb?',1
+195,'What are some movies related to the theme of nuclear war?',1
+196,'Can you suggest a movie with a significant amount of nudity in it?',1
+197,'nudity (full frontal - brief)',1
+198,'Can you suggest any movie with notable full frontal nudity scenes?',1
+199,'nudity (full frontal)',1
+200,'nudity (rear)',1
+201,'nudity (topless - brief)',1
+202,'nudity (topless - notable) in movies',1
+203,'nudity (topless) in movies',1
+204,'What are some movie examples related to the theme of obsession?',1
+205,'What are some popular movies related to the ocean theme?',1
+206,'off-beat comedy',1
+207,'What are some popular movies related to the office setting?',1
+208,'What are some movies related to the oil industry?',1
+209,'What are some popular movies related to the Olympics?',1
+210,'What are some ominous movies that evoke a sense of dread and suspense?',1
+211,'What are some popular movies related to the theme of opera?',1
+212,'What are some popular movies related to the theme of organized crime?',1
+213,'What are some examples of original movies that have gained significant popularity?',1
+214,'original plot',1
+215,'orphans',1
+216,'What are some Oscar-winning movies that you would recommend?',1
+217,'What are some Oscar-winning movies featuring actors who won the Best Actor award?',1
+218,'What are some Oscar-winning movies featuring a best actress performance?',1
+219,'What are some Oscar-winning movies for the best animated feature category?',1
+220,'What are some Oscar-winning movies known for their best cinematography?',1
+221,'What are some Oscar-winning movies for best directing?',1
+222,'What are some Oscar-winning movies for best editing?',1
+223,'What are some Oscar-winning movies that have received recognition for their outstanding visual effects?',1
+224,'What are some Oscar-winning foreign language films?',1
+225,'What are some Oscar-winning movies with the best music - original score category?',1
+226,'What are some Oscar-winning movies with the best music - original song category?',1
+227,'What are some Oscar-winning movies for the Best Picture category?',1
+228,'What are some Oscar-winning movies known for their exceptional sound work?',1
+229,'What are some movies that have won an Oscar for Best Supporting Actor?',1
+230,'What are some movies that have won the Oscar for Best Supporting Actress?',1
+231,'What are some Oscar-winning movies with the best writing - screenplay written directly for the screen category?',1
+232,'What are some Oscar-winning movies?',1
+233,'What are some examples of movies that can be described as having over-the-top action or performances?',1
+234,'What are some examples of overrated movies?',1
+235,'What are some notable movies related to Palestine?',1
+236,'What are some popular movies that involve parallel universes or alternate realities?',1
+237,'paranoia',1
+238,'paranoid',1
+239,'What are some popular movies related to the theme of parenthood?',1
+240,'What are some popular movies set in Paris or featuring Parisian themes?',1
+241,'parody',1
+242,'What are some movies that portray passionate love stories or feature passionate characters?',1
+243,'What are some popular movies featuring penguins as main characters or significant roles?',1
+244,'What are some popular movies with the theme of perfection or having a perfect character?',1
+245,'What are some popular period piece movies?',1
+246,'What are some popular movies related to the Peter Pan theme or story?',1
+247,'What are some popular PG-rated movies that families can enjoy together?',1
+248,'pg-13',1
+249,'What are some movies adapted from the works of Philip K. Dick?',1
+250,'What are some philosophical movies that explore deep thoughts and ideas?',1
+251,'What are some movies that explore philosophical themes or have a philosophical aspect to them?',1
+252,'What are some movies featuring a photographer as a main character or significant role?',1
+253,'What are some movies that involve photography as a significant theme or plot element?',1
+254,'What are some popular movies featuring pigs as characters or main themes?',1
+255,'What are some popular movies related to the theme of pirates?',1
+256,'What are some popular Pixar movies?',1
+257,'What are some popular Pixar Animation movies?',1
+258,'What is the plot of a popular movie?',1
+259,'Explain the concept of plot holes in movies and provide examples of movies with notable plot holes.',1
+260,'plot twist',1
+261,'What are some movies that have a significant connection to poetry or feature poetry as a central theme?',1
+262,'Can you recommend a poignant movie that touches the heart and evokes strong emotions?',1
+263,'What are some movies that can be considered pointless or have a lack of purpose in their storylines?',1
+264,'What are some popular movies related to the theme of poker?',1
+265,'What are some popular movies related to Poland or set in Poland?',1
+266,'What are some popular movies related to the police theme?',1
+267,'What are some movies that deal with the theme of police corruption?',1
+268,'police investigation',1
+269,'political',1
+270,'What are some movies that have a significant political theme or involve political events?',1
+271,'What are some movies related to the theme of pornography?',1
+272,'What are some popular post-apocalyptic movies?',1
+273,'What are some popular post-apocalyptic movies?',1
+274,'What are some movies that have been considered for potential Oscar nominations?',1
+275,'What are some movies that address the theme of poverty?',1
+276,'powerful ending',1
+277,'What are some predictable movies that have gained popularity?',1
+278,'What are some popular movies related to the theme of pregnancy?',1
+279,'What are some movies that deal with the theme of prejudice?',1
+280,'What are some examples of movie prequels?',1
+281,'What are some movies related to the theme of a president or political figure?',1
+282,'What are some pretentious movies that have gained significant attention for their artistic or intellectual approach?',1
+283,'What are some popular movies related to the prison theme?',1
+284,'What are some popular movies related to the theme of prison escape?',1
+285,'What are some popular movies featuring private detectives as the main character or a significant role?',1
+286,'What is an example of a movie where product placement played a significant role in the storyline?',1
+287,'What are some movies related to the prohibition era?',1
+288,'What are some movies that have been criticized for their propagandistic content or themes?',1
+289,'What are some movies related to the theme of prostitution?',1
+290,'What are some popular movies with psychedelic themes or elements?',1
+291,'What are some movies featuring a psychiatrist as a main character or significant role?',1
+292,'What are some movies related to psychiatry?',1
+293,'What are some psychological movies that explore the complexities of human mind and emotions?',1
+294,'What are some movies that explore or have a significant theme related to psychology?',1
+295,'What are some popular movies related to the 'pulp' theme?',1
+296,'punk',1
+297,'What are some popular movies featuring puppets as main characters or significant elements?',1
+298,'queer',1
+299,'What are some quirky movies that you have enjoyed watching?',1
+300,'Can you suggest some quotable movies with memorable dialogues?',1
+301,'What are some popular movies featuring rabbits as main characters or significant roles?',1
+302,'What are some popular movies that deal with the theme of race?',1
+303,'What are some movies that address race issues?',1
+304,'What are some popular movies related to the theme of racing?',1
+305,'What are some movies that address the issue of racism?',1
+306,'What are some popular movies related to the theme of radio or featuring radio as a significant element?',1
+307,'What are some examples of movies that depict the rags to riches storyline?',1
+308,'What are some movies that deal with the sensitive topic of rape?',1
+309,'What are some popular movies featuring rats as main characters or significant roles?',1
+310,'What are some realistic movies that depict everyday life or events in a believable manner?',1
+311,'realistic action',1
+312,'What are some movies related to the theme of reality TV?',1
+313,'What are some movies related to the theme of rebellion?',1
+314,'What are some popular movies that involve the theme of redemption?',1
+315,'Can you recommend a reflective movie that encourages deep thinking and self-reflection?',1
+316,'What are some movies that explore the theme of relationships?',1
+317,'What are some popular movies related to the theme of religion?',1
+318,'Can you suggest a few movies that have been remade or are adaptations of other films?',1
+319,'What are some popular movie remakes that have gained significant attention?',1
+320,'What are some popular movies related to the theme of revenge?',1
+321,'What are some examples of ridiculous movies?',1
+322,'What are some popular movies set in Rio de Janeiro?',1
+323,'road movie',1
+324,'road trip',1
+325,'What are some popular movies adapted from Roald Dahl's works?',1
+326,'What are some popular movies related to the theme of robbery?',1
+327,'What are some popular movies starring Robert Downey Jr.?',1
+328,'What are some movies related to the work of Robert Ludlum?',1
+329,'What are some popular movies featuring robots as main characters or significant roles?',1
+330,'What are some popular movies related to the theme of robots?',1
+331,'rock and roll',1
+332,'What are some popular romance movies that have captivated audiences with their love stories?',1
+333,'What are some popular romantic movies?',1
+334,'What are some popular romantic comedy movies?',1
+335,'What are some popular movies related to the theme of ancient Rome?',1
+336,'runaway',1
+337,'What are some popular movies related to Russia or set in Russia?',1
+338,'What are some popular Russian movies or films that have gained significant attention?',1
+339,'What are some movies that involve a character making a significant sacrifice for the greater good?',1
+340,'What are some popular movies that evoke sad emotions?',1
+341,'sad but good',1
+342,'What are some popular movies related to the samurai theme?',1
+343,'What are some popular movies set in San Francisco?',1
+344,'sappy',1
+345,'What are some movies that use sarcasm as a significant element in their storytelling or character development?',1
+346,'What are some popular movies that fall under the category of satire?',1
+347,'What are some examples of satirical movies?',1
+348,'What are some movies related to Saturday Night Live?',1
+349,'What is the Saturn Award for Best Science Fiction Film and can you suggest a movie that has won this prestigious award?',1
+350,'What movies have won the Saturn Award for Best Special Effects?',1
+351,'What are some popular scary movies?',1
+352,'What are some movies with scenic locations that you would recommend?',1
+353,'What are some movies that deal with the theme of schizophrenia?',1
+354,'What are some popular movies related to the theme of school?',1
+355,'What are some popular science fiction movies?',1
+356,'What are some popular science-related movies?',1
+357,'What are some popular science fiction movies?',1
+358,'What are some popular science fiction movies?',1
+359,'What are some popular sci-fi cult movies?',1
+360,'What are some popular movies set in Scotland?',1
+361,'What are some popular screwball comedy movies?',1
+362,'What are some popular screwball comedy movies?',1
+363,'What are some popular movies known for their exceptional scripts?',1
+364,'What are some popular movies related to secret service themes?',1
+365,'What are some popular movies that involve the theme of secrets or have a plot centered around them?',1
+366,'What are some movies that address the theme of segregation?',1
+367,'What are some movies that focus on self-discovery and personal growth?',1
+368,'What are some sentimental movies that evoke strong emotions and often have a focus on relationships and human connections?',1
+369,'What are some popular movie sequels?',1
+370,'What are some popular movie sequels?',1
+371,'What are some popular movies related to the theme of a serial killer?',1
+372,'What are some popular movie series that have gained significant attention and have a large fan following?',1
+373,'What are some popular movies related to the theme of sex?',1
+374,'What are some popular sex comedy movies?',1
+375,'What are some movies related to the theme of sexuality or involving sexual content?',1
+376,'What are some movies that address the theme of sexual abuse?',1
+377,'What are some movies that explore or depict themes related to sexuality?',1
+378,'What are some movies that deal with the theme of sexualized violence?',1
+379,'Suggest a movie with a sexy theme or featuring a seductive character.',1
+380,'What are some famous movies inspired by or adapted from the works of William Shakespeare?',1
+381,'What are some movies related to the theme of 'shallow'?',1
+382,'What are some popular movies related to sharks?',1
+383,'What are some popular movies related to the theme of shopping?',1
+384,'Can you recommend a short movie that is both entertaining and thought-provoking?',1
+385,'What are some movies that deal with the theme of short-term memory loss?',1
+386,'What are some popular silent movies or films that have a significant impact on the film industry?',1
+387,'What are some examples of silly movies that people might enjoy?',1
+388,'silly fun',1
+389,'Can you suggest a simple movie that is easy to understand and has a straightforward plot?',1
+390,'What are some popular movies featuring a single father as the main character?',1
+391,'What are some movies related to the skinhead theme or culture?',1
+392,'What are some movies related to the 'slackers' theme?',1
+393,'What are some popular slapstick movies that people enjoy watching?',1
+394,'What are some popular slasher movies?',1
+395,'What are some movies that deal with the theme of slavery?',1
+396,'What are some examples of movies with a slow pace or storyline?',1
+397,'slow paced',1
+398,'What are some popular movies set in a small town?',1
+399,'What are some popular movies related to snakes?',1
+400,'so bad it's funny',1
+401,'so bad it's good',1
+402,'What are some popular movies related to soccer?',1
+403,'What are some movies that have a strong focus on social commentary?',1
+404,'What are some movies that depict or explore the theme of solitude?',1
+405,'What are some movies directed by Sophia Coppola?',1
+406,'What are some popular movies related to South Africa?',1
+407,'What are some popular movies set in South America?',1
+408,'southern theme',1
+409,'What are some popular movies related to the space theme?',1
+410,'What are some popular space opera movies?',1
+411,'What are some popular movies related to the space program?',1
+412,'What are some popular movies related to space travel?',1
+413,'What are some popular spaghetti western movies?',1
+414,'What are some popular movies related to Spain or set in Spain?',1
+415,'What are some popular Spanish movies or directors?',1
+416,'What are some movies related to the Spanish Civil War?',1
+417,'Can you suggest a movie with a unique special feature or character?',1
+418,'What are some popular movies known for their exceptional special effects?',1
+419,'What movie features a spelling bee competition as its central theme?',1
+420,'What are some popular movies related to spiders?',1
+421,'What are some popular movies directed by Steven Spielberg?',1
+422,'What are some popular movies featuring spies as the main characters?',1
+423,'What are some popular movies in the splatter genre?',1
+424,'Can you recommend a movie that is a spoof or has a comedic twist on a popular genre or film?',1
+425,'What are some popular movies related to the sports genre?',1
+426,'What are some popular spy movies?',1
+427,'What are some popular movies involving spying or espionage themes?',1
+428,'What are some popular movies related to stage magic?',1
+429,'What are some popular movies related to stand-up comedy?',1
+430,'star trek',1
+431,'Star Wars',1
+432,'steampunk',1
+433,'What are some common stereotypes portrayed in movies?',1
+434,'What are some popular stoner movies?',1
+435,'What are some popular stop motion movies?',1
+436,'What are some popular movies that have a strong focus on storytelling?',1
+437,'What are some movies that showcase exceptional storytelling techniques?',1
+438,'stranded',1
+439,'What are some examples of strange movies?',1
+440,'What are some movies featuring strippers as main characters or significant roles?',1
+441,'Studio Ghibli',1
+442,'stunning',1
+443,'stupid movies',1
+444,'stupid as hell',1
+445,'stupidity',1
+446,'What are some stylish movies that showcase unique fashion and design elements?',1
+447,'stylized',1
+448,'What are some movies related to the theme of suburbia?',1
+449,'What are some movies related to the theme of suicide?',1
+450,'suicide attempt',1
+451,'What are some popular superhero movies?',1
+452,'What are some popular super-hero movies?',1
+453,'What are some popular superhero movies?',1
+454,'What are some popular superhero movies?',1
+455,'What are some popular supernatural movies?',1
+456,'Can you recommend a surprisingly clever movie that might leave a lasting impression?',1
+457,'What are some popular movies related to surfing?',1
+458,'What are some movies with a surprise ending?',1
+459,'Can you suggest a surreal movie that has captivated audiences with its unique and imaginative storyline?',1
+460,'What are some surrealist movies that showcase dreamlike or fantastical elements?',1
+461,'What are some popular movies that involve survival themes?',1
+462,'What are some popular suspense movies that have kept audiences on the edge of their seats?',1
+463,'What are some suspenseful movies that you would recommend?',1
+464,'swashbuckler',1
+465,'What are some popular Swedish movies or filmmakers?',1
+466,'What are some popular movies related to the theme of 'sweet'?',1
+467,'Switching Places',1
+468,'What are some popular movies that involve sword fights?',1
+469,'What are some popular movies featuring sword fighting scenes?',1
+470,'What are some popular movies featuring talking animals?',1
+471,'What are some popular movies with the theme of talking or communication?',1
+472,'What are some popular movies directed by Quentin Tarantino?',1
+473,'What are some popular movies featuring teachers as main characters or significant roles?',1
+474,'What are some tear jerker movies that can evoke strong emotions?',1
+475,'What are some movies that have a significant focus on technology or feature advanced technological elements in their storylines?',1
+476,'What are some popular teen movies that have gained significant attention among young audiences?',1
+477,'What are some popular teen movies?',1
+478,'What are some popular movies featuring teenage characters?',1
+479,'What are some popular movies featuring teenagers as main characters?',1
+480,'What are some popular movies featuring teenage characters?',1
+481,'What are some popular movies that involve the concept of teleportation?',1
+482,'What are some popular movies or TV shows related to the television industry?',1
+483,'What are some movies that explore the concept of tense in their storylines?',1
+484,'What are some movies that deal with the theme of terminal illness?',1
+485,'What are some movies related to the theme of terrorism?',1
+486,'What are some popular movies related to Texas?',1
+487,'What are some thought-provoking movies that have left a deep impact on viewers?',1
+488,'What are some popular thriller movies?',1
+489,'What are some movies that deal with the concept of time in a significant way?',1
+490,'time loop',1
+491,'time travel',1
+492,'What are some popular movies related to the theme of Tokyo?',1
+493,'What are some popular movies related to the Tolkien universe?',1
+494,'What are some popular movies related to the Tom Clancy franchise?',1
+495,'What are some movies that are considered too long by the audience?',1
+496,'What are some movies that are considered too short in terms of runtime?',1
+497,'torture',1
+498,'What are some movies that have a theme of touching or emotional connection?',1
+499,'What are some popular movies related to the theme of toys?',1
+500,'tragedy',1
+501,'What are some popular movies related to the theme of trains?',1
+502,'What are some popular movies featuring trains as a significant element?',1
+503,'What are some popular movies that involve a significant transformation or change in the characters or storyline?',1
+504,'What are some popular movies that involve travel or feature interesting destinations?',1
+505,'What are some popular movies related to the theme of treasure hunting?',1
+506,'What are some popular movies that involve a treasure hunt as a central theme?',1
+507,'What are some examples of tricky movies?',1
+508,'What are some popular movie trilogies?',1
+509,'true story',1
+510,'What is a famous movie adaptation of Truman Capote's work?',1
+511,'What are some popular movies with a twist in their plot?',1
+512,'twist ending',1
+513,'Can you recommend a movie with twists and turns in its plot?',1
+514,'Undercover cop',1
+515,'What are some popular movies featuring underdog characters or stories?',1
+516,'Can you suggest any underrated movies that deserve more recognition?',1
+517,'Understated movies',1
+518,'Underwater movies',1
+519,'unfunny movies',1
+520,'unintentionally funny movies',1
+521,'What are some unique movies that stand out from the crowd?',1
+522,'What are some movies related to the United Nations?',1
+523,'unlikeable characters',1
+524,'What are some examples of movies featuring unlikely friendships?',1
+525,'unrealistic',1
+526,'unusual plot structure',1
+527,'us history',1
+528,'What are some movies related to the theme of utopia?',1
+529,'vampire',1
+530,'vampire human love',1
+531,'vampires',1
+532,'What are some popular movies related to the theme of vengeance?',1
+533,'What are some very funny movies?',1
+534,'What are some very good movies that people generally enjoy?',1
+535,'What are some very interesting movies that people might enjoy watching?',1
+536,'What are some popular movies related to the video game theme?',1
+537,'Video game adaptation movies',1
+538,'What are some movies related to the video games theme?',1
+539,'videogame',1
+540,'What are some popular movies related to the theme of Vienna?',1
+541,'What are some popular movies related to the Vietnam War?',1
+542,'What are some movies related to the Vietnam War?',1
+543,'What are some movies related to the 'View Askew' production company founded by Kevin Smith?',1
+544,'What are some popular movies featuring vigilante characters or themes?',1
+545,'What are some movies that depict or involve themes related to vigilantism?',1
+546,'What are some popular movies that involve violence as a significant theme?',1
+547,'What are some popular movies with a violent theme?',1
+548,'What are some movies that deal with the theme of virginity or explore the concept of losing one's virginity?',1
+549,'What are some popular movies related to the theme of virtual reality?',1
+550,'What are some popular movies related to the theme of a virus outbreak?',1
+551,'Can you recommend a visceral movie that evokes strong emotional responses?',1
+552,'What are some popular movies that have visually stunning scenes or cinematography?',1
+553,'What are some visually appealing movies that have captivated audiences with their stunning visuals and cinematography?',1
+554,'What are some visually stunning movies that have left a lasting impression on viewers?',1
+555,'What are some movies known for their stunning visuals and impressive cinematography?',1
+556,'What are some popular movies related to the theme of voodoo?',1
+557,'What are some movies that explore or depict themes related to voyeurism?',1
+558,'What are some popular war movies that have been well-received by audiences?',1
+559,'war movie',1
+560,'What are some popular movies set during wartime?',1
+561,'What movies are considered a waste of time by some viewers?',1
+562,'watch the credits',1
+563,'What are some popular movies that involve the use of weapons prominently in their storylines?',1
+564,'What are some popular movies related to the theme of weddings?',1
+565,'What are some movies related to the theme of weed?',1
+566,'Weird movies',1
+567,'werewolf',1
+568,'Werewolves',1
+569,'What are some popular western movies?',1
+570,'Whimsical movies',1
+571,'What are some popular movies set in the wilderness or featuring wilderness themes?',1
+572,'What are some popular movies related to the theme of wine?',1
+573,'wistful',1
+574,'What are some popular movies related to the theme of witches?',1
+575,'What are some popular movies featuring witches as main characters or significant roles?',1
+576,'Can you recommend a witty movie that has a memorable dialogue?',1
+577,'wizards',1
+578,'Women in movies',1
+579,'What are some movies that feature working-class characters or storylines?',1
+580,'What are some popular movies that feature a workplace setting?',1
+581,'world politics',1
+582,'World War I',1
+583,'World War II',1
+584,'What are some movies that focus on the life and experiences of a writer?',1
+585,'What are some popular movies where the writers played a significant role in their creation or success?',1
+586,'What are some popular movies that have a significant focus on writing or feature writers as main characters?',1
+587,'wuxia',1
+588,'What are some popular movies related to World War II?',1
+589,'What are some popular movies related to the zombie genre?',1
+590,'What are some popular movies featuring zombies as the main theme or plot?',1
