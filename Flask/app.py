@@ -23,18 +23,22 @@ app.secret_key = '0000'
 @app.route('/getLLMResponse',methods=['POST'])
 def llm_response():
 	'''This function deals with useer input and LLM output.'''
+	print("Request received - /getLLMResponse")
 
 	data = request.get_json()
 	user_input = data.get('userInput')
     # Process the input and generate a response
 	response_message,titles = llm.get_llm(user_input)
+	print("Titles parsed: ",titles)
 
+	recs = []
 	if titles:
 		recs = get_recommendation_cluster(titles[0])
-		for rec in recs:
-			if rec not in titles:
-				titles += recs
-
+		print(f'Recommendations based on {titles[0]}: {recs}')
+	for rec in recs:
+		if rec not in titles:
+			titles.append(rec)
+	print(f'Titles displayed for this search: {titles}')
 	responses = get_list_of_movies_by_titles(titles)   #[send_to_fastapi(name) for name in titles]
 	movies= []
 	#print(f'RESPONSS: {responses}')
@@ -52,7 +56,6 @@ def llm_response():
 		
 		movies.append(movie)
 	clean_movies = [movie if isinstance(movie, dict) else movie.__dict__ for movie in movies]
-
 	return jsonify({'message': response_message,'titles':clean_movies})
 
 @app.route('/')
@@ -121,7 +124,6 @@ def get_directors_by_imdbid(imdb_id):
 				if credit['job'] == 'Director':
 					director = credit['name']
 					break
-			print(director)
 			return [director]
 
 @app.route('/view',methods=['POST'])
