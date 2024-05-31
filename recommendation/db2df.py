@@ -18,5 +18,4 @@ df = pd.read_sql_query('''
 SELECT *
 FROM Movie
 ''', conn)
-
 df.to_csv('movies.csv', index=False)
